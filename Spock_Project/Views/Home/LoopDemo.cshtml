@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "LoopDemo";
+}
+
+<h2>LoopDemo</h2>
+
+<div class="row">
+    <p id="output"></p>
+</div>
+
+@section scripts{ 
+    <script>
+        var message = ""
+        for (var index = 1; index <= 10; index++) {
+            message += "The index value is " + index + "<br/>";
+        }
+        $("#output").html(message);
+    </script>
+    
+    }

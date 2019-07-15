@@ -1,0 +1,172 @@
+﻿
+@{
+
+}
+
+<h2>Sum of all Fears</h2>
+
+<!--Introduction to the Sum of All Fears-->
+<div class="row">
+    <div class="col-md-12 text-left h3">
+        The Sum of All Fears coding challenge involves an array of integers and some number called "K".
+        If "K" can be derived from adding any two numbers from the array, then it is said to contain that K value.
+        If given an array = {10,4,6,7,9,3} and a "K" value of 17, the array contains the "K" value of 17.
+    </div>
+</div>
+<!--End of Introduction-->
+<!--Instructions for First Input Boxes-->
+<div class="row">
+    <div class="col-md-12 text-left h4">
+        Create a searchable array by entering 6 numbers into the boxes below:
+    </div>
+</div>
+    <!--End of Instructions for First Input Boxes-->
+    <!--First Input Boxes-->
+<div class="row">
+    <div class="col-md-2">
+        <input type="number" id="input1" class="form-control" />
+    </div>
+
+    <div class="col-md-2">
+        <input type="number" id="input2" class="form-control" />
+    </div>
+   
+    <div class="col-md-2">
+        <input type="number" id="input3" class="form-control" />
+    </div>
+
+    <div class="col-md-2">
+        <input type="number" id="input4" class="form-control" />
+    </div>
+        
+    <div class="col-md-2">
+        <input type="number" id="input5" class="form-control" />
+    </div>
+
+    <div class="col-md-2">
+        <input type="number" id="input6" class="form-control" />
+    </div>
+
+</div>
+<!--End of First Input Boxes-->
+<!--Instructions for K Value Box-->
+<div class="row">
+    <div class="col-md-12 text-left h4">
+        Establish a "k" value by entering a number in the box below.
+    </div>
+</div>    
+<!--End of Instructions for K Value Box-->
+<!--Final Input Box-->
+<div class="row">
+    <div class="col-md-2">
+        <input type="number" id="inputK" class="form-control control" />
+    </div>
+</div>
+<!--End of K Value Box-->
+<!--Search Button Begins-->
+<div class="row" style="margin-top:20px">
+    <div class="col-md-4">
+        <button id="searchBtn" class="btn btn-danger">Search</button>
+    </div>
+    <div class="col-md-4">
+        <button id="SFbtnClear" class="btn btn-warning">Clear</button>
+    </div>
+    <div class="col-md-4">
+        <button id="SFBtnToggleCode" class="btn btn-success btn-sm">Show Code</button>
+    </div>
+</div>
+    <!--Search Button Ends-->
+    <hr />
+    <div id="resultMessage">
+
+    </div>
+
+    <div class="row">
+        <div class="'col=md-6">
+            <div id="SFcode">
+                <pre class="brush: js">
+            $("#code").hide();
+            $("#btnToggleCode").click(function (){
+                $("#code").toggle();
+
+                if ($(this).text() == "Show Code") {
+                    $(this).text("Hide Code");
+
+                }
+                else {
+                    $(this).text("Show Code")
+                };
+             });
+      
+                
+            $("#btnK").click(function () {
+            //Create variables for two numbers being used in loop.
+            let firstsumNumber = 0;
+            let secondsumNumber = 0;
+            //Get user data
+            $("#searchBtn").click(function () {
+                var input1 = Number($("#input1").val());
+                var input2 = Number($("#input2").val());
+                var input3 = Number($("#input3").val());
+                var input4 = Number($("#input4").val());
+                var input5 = Number($("#input5").val());
+                var input6 = Number($("#input6").val());
+
+                var valK = Number($("#inputK").val());
+                //Put the user's first 6 numbers in an array to be used for loop.
+                var inputArray = [input1, input2, input3, input4, input5, input6];
+
+                //If/then statement to display results of calculations
+                var Result = FindSumA(inputArray, valK);
+                if (Result == true) {
+                    $("#resultMessage").html("A k value of <span style='color:purple;font-weight:bold'>" + valK + "</span> was found by adding array members <span style='color:red;font-weight:bold'>" + firstsumNumber + "</span> and <span style='color:blue;font-weight:bold'> " + secondsumNumber + "</span>.");
+
+                }
+                else {
+                    $("#resultMessage").html("Sorry. A k value was not found.")
+                }
+            });
+            //The functions and loops which determine if K value can be found
+            function FindSumA(numbers, answer) {
+                let checkValue = 0;
+                let found = false;
+
+                for (let i = 0; i <= numbers.length - 2; i++) {
+                    for (let y = (i + 1); y <= numbers.length - 1; y++) {
+                        if (answer == numbers[i] + numbers[y]) {
+                            found = true;
+                            firstsumNumber = numbers[i];
+                            secondsumNumber = numbers[y];
+                            return found;
+                        }
+                    }
+
+                }
+                return found;
+            }
+            //3. Give result
+            function DisplaySum() {
+                let answer = document.getElementbyId("inputK").value;
+                let numArray = []
+            }
+
+
+    
+                </pre>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Work part-->
+    @section scripts{
+        
+
+        <script src="~/Scripts/Spock_Custom.js"></script>
+
+    }
+
+
+

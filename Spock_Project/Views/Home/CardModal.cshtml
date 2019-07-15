@@ -1,0 +1,204 @@
+﻿
+<link href="~/Content/CardModal/style.css" rel="stylesheet" />
+
+<div class="button"><img src="~/Images/cool_js_logo.png" alt="matryoshka" style="height:220px"></div>
+<div class="modal">
+    <div class="front"><img src="~/Images/cool_js_logo.png" alt="matryoshka" style="height:440px"></div>
+    <div class="back">
+        <div class="content">
+            <!-- Tab Pills Begin -->
+            <ul class="nav nav-pills">
+                <li class="active"><a data-toggle="pill" href="#math">Math Calculations</a></li>
+                <li><a data-toggle="pill" href="#menu1">Factorial</a></li>
+                <li><a data-toggle="pill" href="#menu2">FizzBuzz</a></li>
+                <li><a data-toggle="pill" href="#menu3">Palindrome</a></li>
+            </ul>
+            <!-- Tab Pills Ends -->
+            <!-- Tab Content Begins -->
+            <div class="tab-content">
+                <!-- Math Content Begins -->
+                <div id="math" class="tab-pane fade in active">
+                    <h3>Math Calculations</h3>
+                    <p>Enter five integers to see some calculations.</p>
+                    <div class="row">
+                        <!-- Number Input Fields Begins -->
+                        <div class="col-md-8" style="padding-left: 30px">
+                            <div class="row">
+                                <div class="col-md-3">Number 1:</div>
+                                <div class="col-md-7">
+                                    <input type="number" id="input1" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">Number 2:</div>
+                                <div class="col-md-7">
+                                    <input type="number" id="input2" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">Number 3:</div>
+                                <div class="col-md-7">
+                                    <input type="number" id="input3" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">Number 4:</div>
+                                <div class="col-md-7">
+                                    <input type="number" id="input4" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">Number 5:</div>
+                                <div class="col-md-7">
+                                    <input type="number" id="input5" class="form-control" />
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-top:20px;">
+                                <div class="col-md-3">
+                                    <button id="mathBtn" class="btn btn-primary" style="width:110px;">Calculate</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button id="clearBtn" class="btn btn-primary" style="width:110px;">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Number Input Fields Ends -->
+                        <!-- Result Begins -->
+                        <div class="col-md-4">
+                        </div>
+                        <!-- Result Ends -->
+                    </div>
+                </div>
+                <!-- Math Content Ends-->
+                <!-- Menu 1 Begins -->
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Factorials</h3>
+                    <div class="row">
+                        <div class="col-md-12 text-center h3"></div>
+                    </div>
+                </div>
+                <!-- Menu 1 Ends -->
+                <!-- Menu 2 Begins -->
+                <div id="menu2" class="tab-pane fade">
+                    <h3>FizzBuzz</h3>
+                    <p>Some content in menu 2.</p>
+                </div>
+                <!-- Menu 2 Ends -->
+                <!-- Menu 3 Begins -->
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Palindrome</h3>
+                    <p>Some content in menu 3.</p>
+                </div>
+                <!-- Menu 3 Ends -->
+            </div>
+            <!-- Tab Content Ends -->
+        </div>
+    </div>
+    <div class="opened">
+        <div class="content">
+            <!-- Tab Pills Begin -->
+            <ul class="nav nav-pills">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <!-- Tab Pills Ends -->
+            <!-- Tab Content Begins -->
+            <div>
+                <!-- Math Content Begins -->
+                <div>
+                    <h3></h3>
+                    <p></p>
+                    <div class="row">
+                        <!-- Number Input Fields Begins -->
+                        <div class="col-md-8" style="padding-left: 30px">
+                        </div>
+                        <!-- Number Input Fields Ends -->
+                        <!-- Result Begins -->
+                        <div class="col-md-4">
+                            <div class="row">
+                                <p style="font-weight:bold; font-size:medium">Your calculated results</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p id="smallest"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p id="largest"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p id="sum"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p id="product"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p id="average"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Result Ends -->
+                    </div>
+                    <!-- Math Content Ends-->
+                </div>
+                <!-- Tab Content Ends -->
+            </div>
+            <div class="close"></div>
+        </div>
+    </div>
+</div>
+<div class="wrapper"></div>
+@section scripts{
+    <script src="~/Scripts/CardModal/index.js"></script>
+    <script>
+        $("#mathBtn").click(function () {
+            //Step 1: Get the user data
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
+
+
+            //Step 2: Make the calculations with the given data
+            var smallest = Math.min(num1, num2, num3, num4, num5);
+            var largest = Math.max(num1, num2, num3, num4, num5);
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var product = num1 * num2 * num3 * num4 * num5;
+            var average = sum / 5;
+
+            //Step 3: Display the results to the user
+            $("#smallest").text("The smallest number is " + smallest);
+            $("#largest").text("The largest number is " + largest);
+            $("#sum").text("The sum is " + sum);
+            $("#product").text("The product is " + product);
+            $("#average").text("The average is " + average);
+
+        });
+        $("#clearBtn").click(function () {
+
+            $("#input1,#input2,#input3,#input4,#input5").val("");
+
+            $("#smallest").text("");
+            $("#largest").text("");
+            $("#sum").text("");
+            $("#product").text("");
+            $("#average").text("");
+
+        });
+    </script>
+}

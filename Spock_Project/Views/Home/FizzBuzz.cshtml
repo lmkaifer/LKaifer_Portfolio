@@ -1,0 +1,126 @@
+﻿
+@{
+
+}
+
+<h2>FizzBuzz</h2>
+<style>
+    .buttonFB {
+        width: 120px;
+        padding-top: 10px;
+    }
+</style>
+
+<!--Introduction Line-->
+<div class="row">
+    <div class="cold-md-12 text-left h4">
+        Enter two numbers between 1 and 100 in the boxes below. Press "Go" to see multiples of the first number revealed as "Fizz" and multiples of the second number revealed as "buzz".
+        Multiples of both numbers will be revealed as FizzBuzz.
+    </div>
+</div>
+<!--Introduction Line Finishes-->
+<!--Entry Fields-->
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">
+                <input id="fbIn1" type="number" placeholder="Enter number 1" class="form-control" />
+            </div>
+            <div class="col-md-6">
+                <input id="fbIn2" type="number" placeholder="Enter number 2" class="form-control" />
+            </div>
+            <!--Entry Fields Finishes-->
+            <!--Buttons-->
+            <div class="row" style="margin-top: 50px">
+                <div class="col-md-4">
+                    <button class="buttonFB btn btn-primary" id="btnFB">Go</button>
+                </div>
+                <div class="col-md-4">
+                    <button id="btnClear" class="buttonFB btn btn-success">Clear it all!</button>
+                </div>
+                <div class="col-md-4">
+                    <button id="btnToggleCode" class="buttonFB btn btn-warning">Show Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Buttons Finish & Left Side Finishes-->
+    <!--Right Side Starts-->
+    <div class="col-md-6">
+        <div class="row text-center h4">
+            Results
+        </div>
+        <div class="row">
+            <p id="Answer">
+
+            </p>
+
+        </div>
+    </div>
+</div>
+
+
+<!--Show code-->
+<div class="row">
+    <div class="'col=md-6">
+        <div id="code">
+            <pre class="brush: js">
+$("#btnFB").click(function () {
+                    //1. Get user data
+                    var Input1 = Number($("#fbIn1").val());
+                    var Input2 = Number($("#fbIn2").val());
+                    var Answer = "";
+
+
+                    //2. Do something with the input
+
+                    for (var i = 1; i <= 100; i++) {
+                        if (i % Input1 == 0 && i % Input2 == 0) {
+                            Answer += "FizzBuzz"
+                        }
+
+                        else if (i % Input1 == 0) {
+                            Answer += "<img src='http://clipartsign.com/upload/2016/02/20/classic-clip-art-graphic-icon-with-soda-can-vector.jpg' style='height:20px;'>"
+
+                        }
+                        else if (i % Input2 == 0) {
+                            Answer += "<img src='https://cdn2.iconfinder.com/data/icons/bee-farm-filled/64/bee_farm-20-512.png' style='height:20px;'>"
+                        }
+
+                        else {
+                            Answer += i + " "
+                        }
+                    }
+                    //3. Show the answer.
+                    $("#Answer").html(Answer);
+                });
+
+                //Clear out the answers to start over
+                $("#btnClear").click(function () {
+                    $("#fbIn1").val("");
+                    $("#fbIn2").val("");
+                    $("#Answer").text("");
+                });
+
+            </pre>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+@section scripts{
+  
+
+    <script src="~/Scripts/Spock_Custom.js"></script>
+
+}

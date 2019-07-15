@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "FactorialDemo";
+}
+
+<h2>FactorialDemo</h2>
+
+<!--Header of the Demo-->
+<div class="row">
+    <div class="col-md-12 text-center h2">
+        Figure Out Factorials!
+    </div>
+</div>
+
+<!--Left Side of Screen-->
+<div class="row">
+    <!--Input Field-->
+    <div class="col-md-6">
+        <div class="row">
+            <input id="fact" type="number" placeholder="Enter your number" />
+        </div>
+        <!--Buttons-->
+        <div class="row" style="margin-top:20px;">
+            <div class="col-md-3">
+                <button id="btnFact" class="btn btn-danger" style="width:110px;">Calculate</button>
+            </div>
+            <div class="col-md-3">
+                <button id="btnClear" class="btn btn-primary" style="width:110px;">Clear</button>
+            </div>
+            <div class="col-md-3">
+                <button id="toggleBtn" class="btn btn-warning" style="width:110px">Show Code</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Right side of Screen-->
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12 text-left h4">
+                <u>Results. . .</u>
+            </div>
+        </div>
+        <div class="row">
+            <p id="factOut"></p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="'col=md-6">
+        <div id="code">
+            <pre class="brush: js">
+                //Step 1: Get the user data
+                $("#btnFact").click(function () {
+                    var number = Number($("#fact").val());
+
+                    //I am using an If statement to evaluate something
+                    if (number > 170) {
+                        alert("Please enter positive numbers less than 171!");
+                        $("#fact").val("");
+                        return;
+                    }
+
+                    //Step 2: Perform the algorithm
+                    for (var foo = number - 1; foo > 1; foo--) {
+                        //How do we calculate the factorial
+                        number *= foo;
+                    }
+
+
+                    //Step 3: Show the result
+                    $("#factOut").text(number);
+                    //Clear button
+                });
+                $("#btnClear").click(function () {
+                    $("#fact").val("");
+                    $("#factOut").text("");
+                });
+ </pre>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+@section scripts{
+
+    <script src="~/Scripts/Spock_Custom.js"></script>
+}
+

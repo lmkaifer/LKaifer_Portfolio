@@ -1,0 +1,832 @@
+﻿
+
+
+<h2>MathExercise</h2>
+
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="mymodalButton">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+    <!-- Modal Content Begins -->
+    <div class="modal-content">
+    <!-- Modal Header Begins -->
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Javascript Exercises</h4>
+    </div>
+    <!-- Modal Header Ends -->
+    <!-- Modal Body Begins -->
+    <div class="modal-body">
+        <!-- Tab Pills Begin -->
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#math">Math Calculations</a></li>
+            <li><a data-toggle="pill" href="#menu1">Factorial</a></li>
+            <li><a data-toggle="pill" href="#menu2">FizzBuzz</a></li>
+            <li><a data-toggle="pill" href="#menu3">Palindrome</a></li>
+            <li><a data-toggle="pill" href="#menu4">SumFear</a></li>
+        </ul>
+        <!-- Tab Pills Ends -->
+        <!-- Tab Content Begins -->
+        <div class="tab-content">
+            <!-- Math Content Begins -->
+            <div id="math" class="tab-pane fade in active">
+                <h3>Math Calculations</h3>
+                <p>Enter five integers to see some calculations.</p>
+                <div class="row">
+                    <!-- Number Input Fields Begins -->
+                    <div class="col-md-8" style="padding-left: 30px">
+                        <div class="row">
+                            <div class="col-md-3">Number 1:</div>
+                            <div class="col-md-7">
+                                <input type="number" id="input1" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">Number 2:</div>
+                            <div class="col-md-7">
+                                <input type="number" id="input2" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">Number 3:</div>
+                            <div class="col-md-7">
+                                <input type="number" id="input3" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">Number 4:</div>
+                            <div class="col-md-7">
+                                <input type="number" id="input4" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3">Number 5:</div>
+                            <div class="col-md-7">
+                                <input type="number" id="input5" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top:20px;">
+                            <div class="col-md-3">
+                                <button id="mathBtn" class="btn btn-success" style="width:110px;">Calculate</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button id="clearBtn" class="btn btn-warning" style="width:110px;">Clear</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button id="toggleBtn" class="btn btn-danger" style="width:110px">Show Code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Number Input Fields Ends -->
+                    <!-- Result Begins -->
+                    <div class="col-md-4">
+                        <div class="row">
+                            <p style="font-weight:bold; font-size:medium">Your calculated results</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p id="smallest"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p id="largest"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p id="sum"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p id="product"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p id="average"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Result Ends -->
+                </div>
+                <div class="container-fluid" style="padding:40px;">
+                    <div class="row">
+                        <div class="'col=md-6">
+                            <div id="code">
+                                <pre class="brush: js">
+$("#code").hide();
+    $("#toggleBtn").click(function () {
+        $("#code").toggle();
+
+        if ($(this).text() == "Show Code") {
+            $(this).text("Hide Code");
+
+        }
+        else {
+            $(this).text("Show Code")
+        };
+    });
+
+
+
+    $("#mathBtn").click(function () {
+        //Step 1: Get the user data
+        var num1 = Number($("#input1").val());
+        var num2 = Number($("#input2").val());
+        var num3 = Number($("#input3").val());
+        var num4 = Number($("#input4").val());
+        var num5 = Number($("#input5").val());
+
+
+        //Step 2: Make the calculations with the given data
+        var smallest = Math.min(num1, num2, num3, num4, num5);
+        var largest = Math.max(num1, num2, num3, num4, num5);
+        var sum = num1 + num2 + num3 + num4 + num5;
+        var product = num1 * num2 * num3 * num4 * num5;
+        var average = sum / 5;
+
+        //Step 3: Display the results to the user
+        $("#smallest").text("The smallest number is " + smallest);
+        $("#largest").text("The largest number is " + largest);
+        $("#sum").text("The sum is " + sum);
+        $("#product").text("The product is " + product);
+        $("#average").text("The average is " + average);
+
+    })
+    $("#clearBtn").click(function () {
+
+        $("#input1,#input2,#input3,#input4,#input5").val("");
+
+        $("#smallest").text("");
+        $("#largest").text("");
+        $("#sum").text("");
+        $("#product").text("");
+        $("#average").text("");
+
+    });
+});
+//Math exercise ends
+
+//Initializing Modal Fields
+$("#myModal").on("hide.bs.modal", function () {
+    //palindrome code hide
+    $("#palcode").hide();
+    //palindrome toggle button text to Show Code
+    $("#paltoggleBtn").text("Show Code");
+    //input field clearing
+    $("#pal").val("");
+    //result field clearing
+    $("#palOut").text("");
+
+    $("#SFcode").hide();
+    $("#SFBtnToggleCode").text("Show Code");
+    $("#in1").val("");
+    $("#in2").val("");
+    $("#in3").val("");
+    $("#in4").val("");
+    $("#in5").val("");
+    $("#in6").val("");
+    $("#inputK").val("");
+    $("#resultMessage").text("");
+
+    $("#FBcode").hide();
+    $("#FBbtnToggleCode").text("Show Code");
+    $("#fbIn1").val("");
+    $("#fbIn2").val("");
+    $("#Answer").text("");
+
+    $("#factCode").hide();
+    $("#facttoggleBtn").text("Show Code");
+    $("#fact").val("");
+    $("#factOut").text("");
+
+    $("#code").hide();
+    $("#toggleBtn").text("Show Code");
+    $("#input1,#input2,#input3,#input4,#input5").val("");
+    $("#smallest").text("");
+    $("#largest").text("");
+    $("#sum").text("");
+    $("#product").text("");
+    $("#average").text("");
+});
+ 
+
+</pre>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Math Content Ends-->
+            <!-- Factorial Begins -->
+            <div id="menu1" class="tab-pane fade">
+                <h2>Factorial</h2>
+                <div>
+
+
+
+                    <!--Header of the Demo-->
+                    
+                    <!--Left Side of Screen-->
+                    <div class="row" style="padding-bottom: 30px">
+                        <!--Input Field-->
+                        <div class="col-md-8" style="padding-left: 30px">
+                            <div class="row">
+                                <input id="fact" type="number" placeholder="Enter your number" />
+                            </div>
+                            <!--Buttons-->
+                            <div class="row" style="margin-top:20px;">
+                                <div class="col-md-3">
+                                    <button id="btnFact" class="btn btn-danger" style="width:110px;">Calculate</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button id="factbtnClear" class="btn btn-primary" style="width:110px;">Clear</button>
+                                </div>
+                                <div class="col-md-3">
+                                    <button id="facttoggleBtn" class="btn btn-warning" style="width:110px;">Show Code</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Right side of Screen-->
+                        <div class="row" style="padding-left:30px;">
+
+
+                            <div class="col-md-6" style="margin-top:30px;">
+                                <div class="row">
+                                    <div class="col-md-12 text-left h4">
+                                        <u>Results. . .</u>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-left:50px;">
+                                    <p id="factOut"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid" style="padding:40px;">
+                        <div class="row">
+                            <div class="col=md-6">
+                                <div id="factCode">
+                                    <pre class="brush: js">
+        //Toggle Show/Hide Button
+    $("#factCode").hide();
+    $("#facttoggleBtn").click(function () {
+        $("#factCode").toggle();
+
+        if ($(this).text() == "Show Code") {
+            $(this).text("Hide Code");
+
+        }
+        else {
+            $(this).text("Show Code")
+        };
+    });
+
+    //Step 1: Get the user data
+    $("#btnFact").click(function () {
+        var number = Number($("#fact").val());
+
+        //I am using an If statement to evaluate something
+        if (number > 170) {
+            alert("Please enter positive numbers less than 171!");
+            $("#fact").val("");
+            return;
+        }
+
+        //Step 2: Perform the algorithm
+        for (var foo = number - 1; foo > 1; foo--) {
+            //How do we calculate the factorial
+            number *= foo;
+        }
+
+
+        //Step 3: Show the result
+        $("#factOut").text(number);
+        //Clear button
+    });
+    $("#factbtnClear").click(function () {
+        $("#fact").val("");
+        $("#factOut").text("");
+    });
+
+
+    //Factorial Ends
+
+    //Math exercise begins
+    //Toggle Show/Hide Button
+    $("#code").hide();
+    $("#toggleBtn").click(function () {
+        $("#code").toggle();
+
+        if ($(this).text() == "Show Code") {
+            $(this).text("Hide Code");
+
+        }
+        else {
+            $(this).text("Show Code")
+        };
+    });
+
+
+
+ </pre>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Factorial Ends -->
+            <!-- Fizz Buzz Begins -->
+            
+            <div id="menu2" class="tab-pane fade">
+                 <div>
+                    <h2>FizzBuzz</h2>
+                    <style>
+                        .buttonFB {
+                            width: 100px;
+                            padding-top: 10px;
+                        }
+                         .fizz {
+                            color:royalblue;
+                            font-weight: bolder;
+                            font-size:larger;
+                    }
+                        .buzz {
+                            color: orangered;
+                            font-weight: bolder;
+                            font-size: larger;
+                        }
+
+                         .fizzbuzz {
+                             color:darkgreen;
+                             font-weight: bolder;
+                             font-size: larger;
+                             font-family:Cooper;
+                                   
+                         }
+
+                    </style>
+
+                    <!--Introduction Line-->
+                    <div class="row" style="padding-left: 15px">
+                        <div class="cold-md-12 text-left h5">
+                            Enter two numbers between 1 and 100 in the boxes below. Press "Go" to see multiples of the first number revealed as "Fizz" and multiples of the second number revealed as "buzz".
+                            Multiples of both numbers will be revealed as FizzBuzz.
+                        </div>
+                    </div>
+                    <!--Introduction Line Finishes-->
+                    <!--Entry Fields-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row" style="margin-bottom:20px">
+                                <div class="col-md-6">
+                                    <input id="fbIn1" type="number" placeholder="Enter number 1" class="form-control"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input id="fbIn2" type="number" placeholder="Enter number 2" class="form-control"/>
+                                </div>
+                                <!--Entry Fields Finishes-->
+                                <!--Buttons-->
+                                <div class="row" style="margin-left: 10px; padding-top: 50px;">
+                                    <div class="col-md-4">
+                                        <button class="buttonFB btn btn-primary" id="btnFB">Go</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button id="FBbtnClear" class="buttonFB btn btn-success">Clear it all!</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button id="FBbtnToggleCode" class="buttonFB btn btn-warning">Show Code</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Buttons Finish & Left Side Finishes-->
+                        <!--Right Side Starts-->
+                        <div class="col-md-6">
+                            <div class="row text-center h4">
+                                Results
+                            </div>
+                            <div class="row">
+                                <p id="Answer">
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Show code-->
+                    <div class="container-fluid" style="padding:40px;">
+                        <div class="row">
+                            <div class="col=md-6">
+                                <div id="FBcode">
+                                    <pre class="brush: js">
+$("#FBcode").hide();
+    $("#FBbtnToggleCode").click(function () {
+    $("#FBcode").toggle();
+
+        if ($(this).text() == "Show Code") {
+            $(this).text("Hide Code");
+
+        }
+        else {
+            $(this).text("Show Code")
+        };
+    });
+
+    $("#btnFB").click(function () {
+        //1. Get user data
+        var Input1 = Number($("#fbIn1").val());
+        var Input2 = Number($("#fbIn2").val());
+        var Answer = "";
+
+
+        //2. Do something with the input
+
+        for (var i = 1; i <= 100; i++) {
+            var comma = ", ";
+            if (i == 100) {
+                comma = "";
+            }
+            if (i % Input1 == 0 && i % Input2 == 0) {
+                Answer += "<span class='fizzbuzz'>fizzbuzz" + comma + "</span>";
+            }
+
+            else if (i % Input1 == 0) {
+                Answer += "<span class='fizz'>fizz" + comma + "</span>";
+
+            }
+            else if (i % Input2 == 0) {
+                Answer += "<span class='buzz'>buzz" + comma + "</span>";
+                    
+            }
+
+            else {
+                Answer += i + comma;
+            }
+        }
+        //3. Show the answer.
+        Answer = Answer.substr(0, Answer.length - 2);
+        $("#Answer").html(Answer);
+        
+
+    });
+
+    //Clear out the answers to start over
+    $("#FBbtnClear").click(function () {
+        $("#fbIn1").val("");
+        $("#fbIn2").val("");
+        $("#Answer").text("");
+    });
+    //Fizz Buzz ends
+
+                                </pre>
+            
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FizzBuzz Ends -->
+                        <!-- Palindrome Begins -->
+                        <div id="menu3" class="tab-pane fade">
+                            <h3>Palindrome</h3>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-12 text-center h2">
+                                       
+                                    </div>
+                                </div>
+
+                                <!--Left Side-->
+                                <div class="row">
+                                    <!--Input Field-->
+                                    <div class="col-md-7">
+                                        <div class="row" style="margin-left:30px">
+                                            <input id="pal" type="text" placeholder="Enter your word" />
+                                        </div>
+                                        <!--Buttons-->
+                                        <div class="row" style="margin-top:30px">
+                                            <div class="col-md-3">
+                                                <button id="palIn" class="btn btn-danger" style="width:120px">Check by Loop</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button id="palbtnClear" class="btn btn-primary" style="width:120px">Clear</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button id="btnArray" class="btn btn-success" style="width:120px">Check by Array</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button id="paltoggleBtn" class="btn btn-warning" style="width:120px">Show Code</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div class="row" style="margin-left:20px">
+                                            <div class="col-md-12 text-center h4">
+                                                <u>Results. . .</u>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <p id="palOut"></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="'col=md-6" style="padding:30px">
+                                        <div id="palcode">
+                                            <pre class="brush: js">
+ //Palindrome
+    $("#palcode").hide();
+    $("#paltoggleBtn").click(function () {
+        $("#palcode").toggle();
+
+        if ($(this).text() == "Show Code") {
+            $(this).text("Hide Code");
+        }
+        else {
+            $(this).text("Show Code")
+        };
+    });
+
+    //Step 1: Get the word
+    $("#palIn").click(function () {
+        var displayword = $("#pal").val();
+        var word = displayword.toLowerCase().replace(/\s/g, '');
+        for (var index = displayword.length - 1, revword = ""; index >= 0; index--) {
+            revword += displayword.substr(index, 1);
+        }
+        displayrevword = revword;
+        revword = revword.toLowerCase().replace(/\s/g, '');
+        var message = "";
+        if (word == revword) {
+            message = displayword + " reversed = " + displayrevword + " therefore " + displayword + " is a palindrome.";
+        }
+        else {
+            message = displayword + " reversed !=" + displayrevword + " therefore " + displayword + " is not a palindrome";
+        }
+
+        $("#palOut").text(message);
+    });
+
+    $("#btnArray").click(function () {
+        var displayword = $("#pal").val();
+        var word = displayword.toLowerCase().replace(/\s/g, '');
+
+        var revword = displayword.split("").reverse().join("");
+        var displayrevword = revword;
+        revword = revword.toLowerCase().replace(/\s/g, '');
+
+        var message = "";
+        if (word == revword) {
+            message = displayword + " reversed = " + displayrevword + " therefore " + displayword + " is a palindrome";
+        }
+        else {
+            message = displayword + " reversed !=" + displayrevword + " therefore " + displayword + " is not a palindrome";
+        }
+        $("#palOut").text(message);
+    });
+
+    $("#palbtnClear").click(function () {
+        $("#pal").val("");
+        $("#palOut").text("");
+    });
+
+</pre>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Palindrome Ends -->
+                        <!--Sum Fear Begins-->
+                        <div id="menu4" class="tab-pane fade">
+                            <h3>Sum Fear</h3>
+                            <div>
+                                <!--Introduction to the Sum of All Fears-->
+                                <div class="row">
+                                    <div class="col-md-12 text-left h3">
+                                        The Sum of All Fears coding challenge involves an array of integers and some number called "K".
+                                        If "K" can be derived from adding any two numbers from the array, then it is said to contain that K value.
+                                        If given an array = {10,4,6,7,9,3} and a "K" value of 17, the array contains the "K" value of 17.
+                                    </div>
+                                </div>
+                                <!--End of Introduction-->
+                                <!--Instructions for First Input Boxes-->
+                                <div class="row">
+                                    <div class="col-md-12 text-left h4">
+                                        Create a searchable array by entering 6 numbers into the boxes below:
+                                    </div>
+                                </div>
+                                <!--End of Instructions for First Input Boxes-->
+                                <!--First Input Boxes-->
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <input type="number" id="in1" class="form-control" />
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <input type="number" id="in2" class="form-control" />
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <input type="number" id="in3" class="form-control" />
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <input type="number" id="in4" class="form-control" />
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <input type="number" id="in5" class="form-control" />
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <input type="number" id="in6" class="form-control" />
+                                    </div>
+
+                                </div>
+                                <!--End of First Input Boxes-->
+                                <!--Instructions for K Value Box-->
+                                <div class="row">
+                                    <div class="col-md-12 text-left h4">
+                                        Establish a "k" value by entering a number in the box below.
+                                    </div>
+                                </div>
+                                <!--End of Instructions for K Value Box-->
+                                <!--Final Input Box-->
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <input type="number" id="inputK" class="form-control control" />
+                                    </div>
+                                </div>
+                                <!--End of K Value Box-->
+                                <!--Search Button Begins-->
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col-md-4">
+                                        <button id="searchBtn" class="btn btn-danger">Search</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button id="SFbtnClear" class="btn btn-warning">Clear</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button id="SFBtnToggleCode" class="btn btn-success btn-sm">Show Code</button>
+                                    </div>
+                                </div>
+                                <!--Search Button Ends-->
+                                <hr />
+                                <div id="resultMessage">
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="'col=md-6" style="padding:40px">
+                                        <div id="SFcode">
+                                            <pre class="brush: js">
+            $("#SFcode").hide();
+    $("#SFBtnToggleCode").click(function () {
+        $("#SFcode").toggle();
+
+        if ($(this).text() == "Show Code") {
+            $(this).text("Hide Code");
+
+        }
+        else {
+            $(this).text("Show Code")
+        };
+    });
+
+
+
+    //Create variables for two numbers being used in loop.
+    let firstsumNumber = 0;
+    let secondsumNumber = 0;
+
+    $("#searchBtn").click(function () {
+        //Get user data
+        var input1 = Number($("#in1").val());
+        var input2 = Number($("#in2").val());
+        var input3 = Number($("#in3").val());
+        var input4 = Number($("#in4").val());
+        var input5 = Number($("#in5").val());
+        var input6 = Number($("#in6").val());
+
+        var valK = Number($("#inputK").val());
+        //Put the user's first 6 numbers in an array to be used for loop.
+        var inputArray = [input1, input2, input3, input4, input5, input6];
+
+        //If/then statement to display results of calculations
+        var Result = FindSumA(inputArray, valK);
+        if (Result == true) {
+            $("#resultMessage").html("A k value of <span style='color:purple;font-weight:bold'>" + valK + "</span> was found by adding array members <span style='color:red;font-weight:bold'>" + firstsumNumber + "</span> and <span style='color:blue;font-weight:bold'> " + secondsumNumber + "</span>.");
+
+        }
+        else {
+            $("#resultMessage").html("Sorry. A k value was not found.")
+        }
+    });
+    //The functions and loops which determine if K value can be found
+    function FindSumA(numbers, answer) {
+        let checkValue = 0;
+        let found = false;
+
+        for (let i = 0; i <= numbers.length - 2; i++) {
+            for (let y = (i + 1); y <= numbers.length - 1; y++) {
+                if (answer == numbers[i] + numbers[y]) {
+                    found = true;
+                    firstsumNumber = numbers[i];
+                    secondsumNumber = numbers[y];
+                    return found;
+                }
+            }
+
+        }
+        return found;
+    }
+
+    //3. Give result
+    //function DisplaySum() { 
+    //        let answer = document.getElementbyId("inputK").value;
+    //        let numArray = []
+    //    };
+
+
+    $("#SFbtnClear").click(function () {
+        $("#in1").val("");
+        $("#in2").val("");
+        $("#in3").val("");
+        $("#in4").val("");
+        $("#in5").val("");
+        $("#in6").val("");
+        $("#inputK").val("");
+        $("#resultMessage").text("");
+    });
+
+
+                </pre>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab Content Ends -->
+                </div>
+                <!-- Modal Body Ends -->
+                <!-- Modal Footer Begins -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                <!-- Modal Footer Ends -->
+            </div>
+        </div>
+    </div>
+            <!-- Modal Content Ends -->
+     
+
+
+
+            @section scripts{
+
+                <script src="~/Scripts/Spock_Custom.js"></script>
+
+            }

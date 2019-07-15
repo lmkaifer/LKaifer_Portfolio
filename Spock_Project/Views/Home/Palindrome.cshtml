@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Palindrome";
+}
+
+<h2>Palindrome</h2>
+
+<!--Use the BS Grid to layout the UI-->
+<!--Use a decrementing for loop to iterate over the supplied word from right to left-->
+<!--In conjunction with the substr command that uses the current loop value-->
+<!--Header of the Demo-->
+<div class="row">
+    <div class="col-md-12 text-center h2">
+        Welcome to Palindromes!
+    </div>
+</div>
+
+<!--Left Side-->
+<div class="row">
+    <!--Input Field-->
+    <div class="col-md-6">
+        <div class="row">
+            <input id="pal" type="text" placeholder="Enter your word" />
+        </div>
+        <!--Buttons-->
+        <div class="row" style="margin-top:30px">
+            <div class="col-md-3">
+                <button id="palIn" class="btn btn-danger" style="width:120px">Check by Loop</button>
+            </div>
+            <div class="col-md-3">
+                <button id="btnClear" class="btn btn-primary" style="width:120px">Clear</button>
+            </div>
+            <div class="col-md-3">
+                <button id="btnArray" class="btn btn-success" style="width:120px">Check by Array</button>
+            </div>
+            <div class="col-md-3">
+                <button id="toggleBtn" class="btn btn-warning" style="width:120px">Show Code</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12 text-center h4">
+                <u>Results. . .</u>
+            </div>
+        </div>
+        <div class="row">
+            <p id="palOut"></p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="'col=md-6">
+        <div id="code">
+            <pre class="brush: js">
+ $(function () {
+          
+    //Step 1: Get the word
+        $("#palIn").click(function () {
+            var displayword = $("#pal").val();
+        var word = displayword.toLowerCase().replace(/\s/g, '');
+            for (var index = displayword.length - 1, revword = ""; index >= 0; index--) {
+            revword += displayword.substr(index, 1);
+        }
+        displayrevword = revword;
+        revword = revword.toLowerCase().replace(/\s/g, '');
+        var message = "";
+            if (word == revword) {
+            message = displayword + " reversed = " + displayrevword + " therefore " + displayword + " is a palindrome.";
+        }
+            else {
+            message = displayword + " reversed !=" + displayrevword + " therefore " + displayword + " is not a palindrome";
+        }
+
+        $("#palOut").text(message);
+    });
+
+        $("#btnArray").click(function () {
+            var displayword = $("#pal").val();
+        var word = displayword.toLowerCase().replace(/\s/g, '');
+
+        var revword = displayword.split("").reverse().join("");
+        var displayrevword = revword;
+        revword = revword.toLowerCase().replace(/\s/g, '');
+
+        var message = "";
+            if (word == revword) {
+            message = displayword + " reversed = " + displayrevword + " therefore " + displayword + " is a palindrome";
+        }
+            else {
+            message = displayword + " reversed !=" + displayrevword + " therefore " + displayword + " is not a palindrome";
+        }
+        $("#palOut").text(message);
+    });
+
+        $("#btnClear").click(function () {
+            $("#pal").val("");
+        $("#palOut").text("");
+    });
+    
+
+    
+    });
+</pre>
+
+
+        </div>
+
+    </div>
+</div>
+
+@section scripts{
+     
+      
+    <script src="~/Scripts/Spock_Custom.js"></script>
+
+}
