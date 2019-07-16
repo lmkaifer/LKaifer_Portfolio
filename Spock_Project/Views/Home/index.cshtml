@@ -181,37 +181,43 @@
         <!-- About 1 -->
         <div class="row color-bg">
             <div class="col-md-6 nopadding features-intro-img">
-                <div class="about-image" style="background-image:url(../Images/JohnDoeImages/about1.png)"></div><!-- about image 1 -->
+                <div class="img">
+                    <a href="" data-toggle="modal" data-target="#mathModal" id="mymodalButton" title="Coding Challenges"></a>
+                    <div class="about-image" style="background-image: url('../../Images/JohnDoeImages/portfolio/achieve-1822503_1920.jpg');
+"></div>
+
+                </div>
+                <!-- about image 1 -->
             </div>
-            <div class="col-md-6 about-text">
-                <h6>Custom Software Development</h6><!-- headline-->
-                <p></p><br><!-- About Text 1 -->
-                <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
+                <div class="col-md-6 about-text">
+                    <h6>Coding Challenges</h6><!-- headline-->
+                    <p></p><br><!-- About Text 1 -->
+                    <a href="" data-toggle="modal" data-target="#mathModal" id="mymodalButton" title="Coding Challenges">Experience the Challenges!</a><!-- read more button  -->
+                </div>
+            </div>
+            <!-- About 2 -->
+            <div class="row">
+                <div class="col-md-6 about-text">
+                    <h6>Mobile Development</h6><!-- Headline -->
+                    <p></p><br><!-- About Text 2 -->
+                    <a href="index.html#team" class="weight-outline-btn">Read more</a>	<!-- read more button  -->
+                </div>
+                <div class="col-md-6 nopadding features-intro-img">
+                    <div class="about-image" style="background-image:url(../Images/JohnDoeImages/about2.png)"></div><!-- about image 2 -->
+                </div>
+            </div>
+            <!-- About 3 -->
+            <div class="row color-bg">
+                <div class="col-md-6 nopadding features-intro-img">
+                    <div class="about-image" style="background-image:url(../Images/JohnDoeImages/about3.png)"></div><!-- about image 3 -->
+                </div>
+                <div class="col-md-6 about-text">
+                    <h6>Database Development</h6><!-- Headline-->
+                    <p></p><br><!-- About Text 3 -->
+                    <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
+                </div>
             </div>
         </div>
-        <!-- About 2 -->
-        <div class="row">
-            <div class="col-md-6 about-text">
-                <h6>Mobile Development</h6><!-- Headline -->
-                <p></p><br><!-- About Text 2 -->
-                <a href="index.html#team" class="weight-outline-btn">Read more</a>	<!-- read more button  -->
-            </div>
-            <div class="col-md-6 nopadding features-intro-img">
-                <div class="about-image" style="background-image:url(../Images/JohnDoeImages/about2.png)"></div><!-- about image 2 -->
-            </div>
-        </div>
-        <!-- About 3 -->
-        <div class="row color-bg">
-            <div class="col-md-6 nopadding features-intro-img">
-                <div class="about-image" style="background-image:url(../Images/JohnDoeImages/about3.png)"></div><!-- about image 3 -->
-            </div>
-            <div class="col-md-6 about-text">
-                <h6>Database Development</h6><!-- Headline-->
-                <p></p><br><!-- About Text 3 -->
-                <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
-            </div>
-        </div>
-    </div>
     <!-- ==========================
     ABOUT SECTION END
     =========================== -->
@@ -316,7 +322,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="index.html#contact" class="outline-btn">Hire Lisa Kaifer</a>
+                    
                 </div>
             </div>
         </div>
@@ -598,7 +604,7 @@
                             <!-- Math Content Begins -->
                             <div id="math" class="tab-pane fade in active">
                                 <h2>MATH CALCULATIONS</h2>
-                                <p>Enter five integers to see some calculations.</p>
+                                <h4>Enter five integers below. Then the calculate button will help you find the smallest number in the series, largest number in the series, sum, product and average of the numbers. </h4>
                                 <div class="row">
                                     <!-- Number Input Fields Begins -->
                                     <div class="col-md-8" style="padding-left: 30px">
@@ -808,6 +814,7 @@ $("#myModal").on("hide.bs.modal", function () {
                                         <!--Input Field-->
                                         <div class="col-md-8" style="padding-left: 30px">
                                             <div class="row">
+                                                <h3>To calculate a factorial, enter a number in the field, and press "calculate."</h3>
                                                 <input id="fact" type="number" placeholder="Enter your number" />
                                             </div>
                                             <!--Buttons-->
@@ -1052,9 +1059,7 @@ $("#FBcode").hide();
                 Answer += i + comma;
             }
         }
-        //3. Show the answer.
-        Answer = Answer.substr(0, Answer.length - 2);
-        $("#Answer").html(Answer);
+        
         
 
     });
@@ -1087,7 +1092,7 @@ $("#FBcode").hide();
                                 <div>
                                     <div class="row">
                                         <div class="col-md-12 text-center h2">
-
+                                            Please enter a word to determine if it's a palindrome either by loop or by array.
                                         </div>
                                     </div>
 

@@ -143,10 +143,7 @@ $("#btnFB").click(function () {
             Answer += i + comma;
         }
     }
-    //3. Show the answer.
-    Answer = Answer.substr(0, Answer.length - 2);
-    $("#Answer").html(Answer);
-
+    
 
 });
 
@@ -190,7 +187,7 @@ $("#FBbtnClear").click(function () {
             message = displayword + " reversed = " + displayrevword + " therefore " + displayword + " is a palindrome.";
         }
         else {
-            message = displayword + " reversed is not " + displayrevword + " therefore " + displayword + " is not a palindrome";
+            message = displayword + " reversed is not " + displayrevword + " therefore " + displayword + " is not a palindrome.";
         }
 
         $("#palOut").text(message);
