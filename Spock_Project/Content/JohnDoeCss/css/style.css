@@ -238,7 +238,7 @@ legend {
 }
 button,input,select,textarea {
 	font-size:100%;
-	/margin:0;
+	margin:0;
 	vertical-align:baseline;
 	*vertical-align:middle;
 }
@@ -454,8 +454,7 @@ table {
 /* ==========================================================================Hero========================================================================== */
 .hero {
     background: right bottom no-repeat;
-    background-image: url('../../../Images/JohnDoeImages/laptop-2557571_1920.jpg');
-    background-size: contain;
+    background-image: url('../../../Images/JohnDoeImages/flowers-871685_1920.jpg');
     padding: 110px 0 100px 0;
     height: auto;
     background-color: #FBFBFB;
@@ -468,20 +467,20 @@ table {
 	line-height: 95px;
 	text-transform: uppercase;
 }
-.hero h1 span {
-	color:#a1a9b0;
-	/* display:inline-block; */
-}
-.hero h3 {
-	font-size: 20px;
-	margin:0;
-	padding:0;
-	opacity:0.5;
-	color: #E04343;
-	letter-spacing: 18px;
-	line-height: 50px;
-	text-transform: uppercase;
-}
+    .hero h1 span {
+        color: #F8F8FF;
+        /* display:inline-block; */
+    }
+    .hero h3 {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        opacity: 0.5;
+        color: #ff3300;
+        letter-spacing: 18px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
 .hero p {
 	letter-spacing:1px;
 	color:#fff;
