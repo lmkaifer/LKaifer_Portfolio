@@ -143,7 +143,8 @@ $("#btnFB").click(function () {
             Answer += i + comma;
         }
     }
-    
+    //3. Show the answer.
+    $("#Answer").html(Answer);
 
 });
 

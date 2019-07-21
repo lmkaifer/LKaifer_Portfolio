@@ -1,6 +1,6 @@
 ﻿@{
     Layout = null;
-    
+
 }
 
 
@@ -59,6 +59,7 @@
                             <a href="#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
                             <a href="#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
                             <a href="#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+                            <a href="#codingChallenge"><i class="fa fa-fw fa-jsfiddle"></i><span>JS</span></a>
                             <a href="#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
                             <a href="#blog"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a>
                             <a href="#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
@@ -176,23 +177,23 @@
 
 
 
-
-    <div class="container-fluid">
-        <!-- About 1 -->
-        <div class="row color-bg">
-            <div class="col-md-6 nopadding features-intro-img">
-                <div class="img">
-                    <a href="" data-toggle="modal" data-target="#mathModal" id="mymodalButton" title="Coding Challenges"></a>
-                    <div class="about-image" style="background-image: url('../../Images/JohnDoeImages/portfolio/achieve-1822503_1920.jpg');
+    <section id="codingChallenge">
+        <div class="container-fluid">
+            <!-- About 1 -->
+            <div class="row color-bg">
+                <div class="col-md-6 nopadding features-intro-img">
+                    <div class="img">
+                        <a href="" data-toggle="modal" data-target="#mathModal" id="mymodalButton" title="Coding Challenges"></a>
+                        <div class="about-image" style="background-image: url('../../Images/JohnDoeImages/portfolio/achieve-1822503_1920.jpg');
 "></div>
 
+                    </div>
+                    <!-- about image 1 -->
                 </div>
-                <!-- about image 1 -->
-            </div>
                 <div class="col-md-6 about-text">
                     <h6>Coding Challenges</h6><!-- headline-->
                     <p></p><br><!-- About Text 1 -->
-                    <a href="" data-toggle="modal" data-target="#mathModal" id="mymodalButton" title="Coding Challenges">Experience the Challenges!</a><!-- read more button  -->
+                    <a href="" data-toggle="modal" data-target="#mathModal" id="mymodalButton" title="Coding Challenges" class="weight-outline-btn">Experience the Challenges!</a><!-- read more button  -->
                 </div>
             </div>
             <!-- About 2 -->
@@ -218,6 +219,8 @@
                 </div>
             </div>
         </div>
+
+    </section>
     <!-- ==========================
     ABOUT SECTION END
     =========================== -->
@@ -235,17 +238,21 @@
         </div>
     </section>
 
-    <div class="container">
+    <di class="container">
         <div class="row row-offset-0">
 
             <!-- PORTFOLIO ITEM 1 -->
             <div class="col-md-3 col-sm-6">
                 <div class="overlay-effect effects clearfix">
                     <div class="img">
-                        <a href="" data-toggle="modal" data-target="#mathModal" id="mymodalButton" title="Coding Challenges"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-01-thumbnail.jpg" alt="Portfolio Item"></a>
+                        <a href="" data-lightbox="roadtrip" title="Project Two - Blog">
+                            <img class="grayscale" src="~/Images/JohnDoeImages/portfolio/blog-img-thumbnail.jpg" alt="Portfolio Item">
+                        </a>
                     </div>
                 </div>
             </div>
+
+
             <!-- PORTFOLIO ITEM END -->
             <!-- PORTFOLIO ITEM 2 -->
             <div class="col-md-3 col-sm-6">
@@ -311,389 +318,391 @@
             </div>
             <!-- PORTFOLIO ITEM END -->
         </div><!--/row-->
-    </div><!--/.container-->
-    <!-- ==========================
-    PORTFOLIO SECTION END
-    =========================== -->
-    <!-- ==========================
-    CUSTOM SPACER
-    =========================== -->
-    <div class="spacer-cta text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ==========================
-    CUSTOM SPACER END
-    =========================== -->
-    <!-- ==========================
-    BLOG SECTION
-    =========================== -->
-    <section class="text-center section-padding" id="blog">
-        <div class="container">
-            <!-- Headline -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="arrow">My <span>little</span> blog</h1>
-                </div>
-            </div><br><br>
+        </div><!--/.container-->
+        <!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+        <!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+        <div class="spacer-cta text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
 
-            <!-- Blog Slider -->
-            <div class="row">
-                <div id="blogSlider">
-                    <ul class="slides">
-                        <li>
-                            <!-- Blog Entry 1 -->
-                            <div class="col-md-4 wp4">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                                    </div>
-                                </div>
-                                <br>
-                                <h2>Creative Minds</h2><!-- Headline -->
-                                <p></p><!-- Description-->
-                            </div>
-                            <!-- Blog Entry 2 -->
-                            <div class="col-md-4 wp4 delay-05s">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                                    </div>
-                                </div>
-                                <br>
-                                <h2>Creative Hearts</h2><!-- Headline -->
-                                <p></p><!-- Description -->
-                            </div>
-                            <!-- Blog Entry 3 -->
-                            <div class="col-md-4 wp4 delay-1s">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                                    </div>
-                                </div>
-                                <br>
-                                <h2>Creative Ideas</h2><!-- Headline -->
-                                <p></p><!-- Description-->
-                            </div>
-                        </li>
-                        <li>
-                            <!-- Blog Entry 4 -->
-                            <div class="col-md-4 wp4">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                                    </div>
-                                </div>
-                                <br>
-                                <h2>Creative Minds</h2><!-- Headline -->
-                                <p></p><!-- Description -->
-                            </div>
-                            <!-- Blog Entry 5 -->
-                            <div class="col-md-4 wp4 delay-05s">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                                    </div>
-                                </div>
-                                <br>
-                                <h2>Creative Hearts</h2>
-                                <p></p>
-                            </div>
-                            <!-- Blog Entry 6 -->
-                            <div class="col-md-4 wp4 delay-1s">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                                    </div>
-                                </div>
-                                <br>
-                                <h2>Creative Ideas</h2><!-- Headline -->
-                                <p></p><!-- Description -->
-                            </div>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ==========================
-    BLOG SECTION END
-    =========================== -->
-    <!-- ==========================
-    CLIENT SECTION
-    =========================== -->
-    <div class="container-fluid">
-        <div class="row color-bg">
-            <!-- Left Image -->
-            <div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
-                <div class="about-image" style="background-image:url(../Images/JohnDoeImages/clients.png)"></div>
-            </div>
-            <!-- Clients / Testimonials -->
-            <div class="col-md-6 nopadding about-text">
-                <h6>What our clients said</h6>
-                <div id="clientSlider">
-                    <ul class="slides">
-                        <li><p><br>	<small>- Jason Twichell, Coder Foundry</small></p></li>
-                        <li><p><br>	<small>- Bobby Davis, CoreTechs CEO</small></p></li>
-                        <li><p><br>	<small>- Hashim Warren, Coder Foundry, Senior Director of Marketing Technology and Operations</small></p>	</li>
-                    </ul>
+        <!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+        <!-- ==========================
+        BLOG SECTION
+        =========================== -->
+        <section class="text-center section-padding" id="blog">
+            <div class="container">
+                <!-- Headline -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="arrow">My <span>little</span> blog</h1>
+                    </div>
+                </div><br><br>
+
+                <!-- Blog Slider -->
+                <div class="row">
+                    <div id="blogSlider">
+                        <ul class="slides">
+                            <li>
+                                <!-- Blog Entry 1 -->
+                                <div class="col-md-4 wp4">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2>Creative Minds</h2><!-- Headline -->
+                                    <p></p><!-- Description-->
+                                </div>
+                                <!-- Blog Entry 2 -->
+                                <div class="col-md-4 wp4 delay-05s">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2>Creative Hearts</h2><!-- Headline -->
+                                    <p></p><!-- Description -->
+                                </div>
+                                <!-- Blog Entry 3 -->
+                                <div class="col-md-4 wp4 delay-1s">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2>Creative Ideas</h2><!-- Headline -->
+                                    <p></p><!-- Description-->
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Blog Entry 4 -->
+                                <div class="col-md-4 wp4">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2>Creative Minds</h2><!-- Headline -->
+                                    <p></p><!-- Description -->
+                                </div>
+                                <!-- Blog Entry 5 -->
+                                <div class="col-md-4 wp4 delay-05s">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2>Creative Hearts</h2>
+                                    <p></p>
+                                </div>
+                                <!-- Blog Entry 6 -->
+                                <div class="col-md-4 wp4 delay-1s">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h2>Creative Ideas</h2><!-- Headline -->
+                                    <p></p><!-- Description -->
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- ==========================
-    CLIENTS SECTION END
-    =========================== -->
-    <!-- ==========================
-    NEWSLETTER SECTION
-    =========================== -->
-    <section>
+        </section>
+        <!-- ==========================
+        BLOG SECTION END
+        =========================== -->
+        <!-- ==========================
+        CLIENT SECTION
+        =========================== -->
         <div class="container-fluid">
             <div class="row color-bg">
-                <div class="col-md-6 nopadding subscribe text-center">
-                    <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1><!-- Heading -->
-                    <form action="index.html#">
-                        <input type="text" name="" value="" placeholder="" required><!-- E-Mail -->
-                        <input type="submit" name="" value="Send"><!-- Submit Button -->
-                    </form>
+                <!-- Left Image -->
+                <div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
+                    <div class="about-image" style="background-image:url(../Images/JohnDoeImages/clients.png)"></div>
                 </div>
-                <div class="col-md-6 nopadding features-intro-img">
-                    <div class="about-image" style="background-image:url(../Images/JohnDoeImages/newsletter.png)"></div><!-- Right Image -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========================
-    NEWSLETTER SECTION END
-    =========================== -->
-    <!-- ==========================
-    CONTACT SECTION
-    =========================== -->
-    <section class="text-center section-padding contact-wrap" id="contact">
-        <!-- To Top Button -->
-        <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
-        <div class="container">
-            <!-- Headline -->
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="arrow">Drop <span>me</span> a line</h1>
-                </div>
-            </div>
-            <div class="row contact-details">
-                <!-- Adress Box -->
-                <div class="col-md-4">
-                    <div class="dark-box box-hover">
-                        <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-                        <p>3 Ridgemore Ct., Greensboro, NC</p>
-                    </div>
-                </div>
-                <!-- Phone Number Box -->
-                <div class="col-md-4">
-                    <div class="dark-box box-hover">
-                        <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                        <p>+1 336 301 2687</p>
-                    </div>
-                </div>
-                <!-- E-Mail Box -->
-                <div class="col-md-4">
-                    <div class="dark-box box-hover">
-                        <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                        <p><a href="index.html#">lmkaifer@hotmail.com</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Google Maps (Change your Settings below) -->
-                <div class="col-md-6">
-                    <div id="googlemaps"></div>
-                </div>
-                <!-- Contact Form -->
-                <div class="col-md-6 contact">
-                    <form role="form">
-                        <!-- Name -->
-                        <div class="row">
-                            <div class="col-md-6">
-                                <!-- E-Mail -->
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Phone Number -->
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email address">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Message Area -->
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
-                        </div>
-                        <!-- Subtmit Button -->
-                        <button type="submit" class="btn btn-send">
-                            Send message
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <br>
-            <!-- Social Buttons - use font-awesome, past in what you want -->
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="social-buttons">
-                        <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
-                        <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
-                        <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
-                        <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
-                        <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========================
-    CONTACT SECTION END
-    =========================== -->
-    <!-- ==========================
-    FOOTER SECTION
-    =========================== -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ==========================
-    FOOTER SECTION END
-    =========================== -->
-
-    <div>
-        <!-- Modal -->
-
-        <div id="mathModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <!-- Modal Content Begins -->
-                <div class="modal-content">
-                    <!-- Modal Header Begins -->
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Javascript Exercises</h4>
-                    </div>
-                    <!-- Modal Header Ends -->
-                    <!-- Modal Body Begins -->
-                    <div class="modal-body">
-                        <!-- Tab Pills Begin -->
-                        <ul class="nav nav-tabs">
-                            <li class="active" data-custom-tab-toggle="#math"><a href="">Math Calculations</a></li>
-                            <li data-custom-tab-toggle="#menu1"><a href="">Factorial</a></li>
-                            <li data-custom-tab-toggle="#menu2"><a href="">FizzBuzz</a></li>
-                            <li data-custom-tab-toggle="#menu3"><a href="">Palindrome</a></li>
-                            <li data-custom-tab-toggle="#menu4"><a href="">Sum of All Fears</a></li>
+                <!-- Clients / Testimonials -->
+                <div class="col-md-6 nopadding about-text">
+                    <h6>What our clients said</h6>
+                    <div id="clientSlider">
+                        <ul class="slides">
+                            <li><p><br>	<small>- Jason Twichell, Coder Foundry</small></p></li>
+                            <li><p><br>	<small>- Bobby Davis, CoreTechs CEO</small></p></li>
+                            <li><p><br>	<small>- Hashim Warren, Coder Foundry, Senior Director of Marketing Technology and Operations</small></p>	</li>
                         </ul>
-                        <!-- Tab Pills Ends -->
-                        <!-- Tab Content Begins -->
-                        <div class="tab-content">
-                            <!-- Math Content Begins -->
-                            <div id="math" class="tab-pane fade in active">
-                                <h2>MATH CALCULATIONS</h2>
-                                <h4>Enter five integers below. Then the calculate button will help you find the smallest number in the series, largest number in the series, sum, product and average of the numbers. </h4>
-                                <div class="row">
-                                    <!-- Number Input Fields Begins -->
-                                    <div class="col-md-8" style="padding-left: 30px">
-                                        <div class="row">
-                                            <div class="col-md-3">Number 1:</div>
-                                            <div class="col-md-7">
-                                                <input type="number" id="input1" class="form-control" />
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-3">Number 2:</div>
-                                            <div class="col-md-7">
-                                                <input type="number" id="input2" class="form-control" />
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-3">Number 3:</div>
-                                            <div class="col-md-7">
-                                                <input type="number" id="input3" class="form-control" />
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-3">Number 4:</div>
-                                            <div class="col-md-7">
-                                                <input type="number" id="input4" class="form-control" />
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-3">Number 5:</div>
-                                            <div class="col-md-7">
-                                                <input type="number" id="input5" class="form-control" />
-                                            </div>
-                                        </div>
-
-                                        <div class="row" style="margin-top:20px;">
-                                            <div class="col-md-3">
-                                                <button id="mathBtn" class="btn btn-success" style="width:110px;">Calculate</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <button id="clearBtn" class="btn btn-warning" style="width:110px;">Clear</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <button id="toggleBtn" class="btn btn-danger" style="width:110px">Show Code</button>
-                                            </div>
-                                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==========================
+        CLIENTS SECTION END
+        =========================== -->
+        <!-- ==========================
+        NEWSLETTER SECTION
+        =========================== -->
+        <section>
+            <div class="container-fluid">
+                <div class="row color-bg">
+                    <div class="col-md-6 nopadding subscribe text-center">
+                        <h1><i class="fa fa-paper-plane"></i><span>Subscribe our Newsletter</span></h1><!-- Heading -->
+                        <form action="index.html#">
+                            <input type="text" name="" value="" placeholder="" required><!-- E-Mail -->
+                            <input type="submit" name="" value="Send"><!-- Submit Button -->
+                        </form>
+                    </div>
+                    <div class="col-md-6 nopadding features-intro-img">
+                        <div class="about-image" style="background-image:url(../Images/JohnDoeImages/newsletter.png)"></div><!-- Right Image -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================
+        NEWSLETTER SECTION END
+        =========================== -->
+        <!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+            <!-- To Top Button -->
+            <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+            <div class="container">
+                <!-- Headline -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="arrow">Drop <span>me</span> a line</h1>
+                    </div>
+                </div>
+                <div class="row contact-details">
+                    <!-- Adress Box -->
+                    <div class="col-md-4">
+                        <div class="dark-box box-hover">
+                            <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+                            <p>3 Ridgemore Ct., Greensboro, NC</p>
+                        </div>
+                    </div>
+                    <!-- Phone Number Box -->
+                    <div class="col-md-4">
+                        <div class="dark-box box-hover">
+                            <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+                            <p>+1 336 301 2687</p>
+                        </div>
+                    </div>
+                    <!-- E-Mail Box -->
+                    <div class="col-md-4">
+                        <div class="dark-box box-hover">
+                            <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                            <p><a href="index.html#">lmkaifer@hotmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Google Maps (Change your Settings below) -->
+                    <div class="col-md-6">
+                        <div id="googlemaps"></div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="col-md-6 contact">
+                        <form role="form">
+                            <!-- Name -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- E-Mail -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your name">
                                     </div>
-                                    <!-- Number Input Fields Ends -->
-                                    <!-- Result Begins -->
-                                    <div class="col-md-4">
-                                        <div class="row">
-                                            <p style="font-weight:bold; font-size:medium">Your calculated results</p>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p id="smallest"></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p id="largest"></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p id="sum"></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p id="product"></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p id="average"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Result Ends -->
                                 </div>
-                                <div class="container-fluid" style="padding:40px;">
+                                <div class="col-md-6">
+                                    <!-- Phone Number -->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Message Area -->
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
+                            </div>
+                            <!-- Subtmit Button -->
+                            <button type="submit" class="btn btn-send">
+                                Send message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <br>
+                <!-- Social Buttons - use font-awesome, past in what you want -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="social-buttons">
+                            <li><a href="index.html#" class="social-btn"><i class="fa fa-dribbble"></i></a></li><!-- dribble -->
+                            <li><a href="index.html#" class="social-btn"><i class="fa fa-twitter"></i></a></li><!-- twitter -->
+                            <li><a href="index.html#" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
+                            <li><a href="index.html#" class="social-btn"><i class="fa fa-deviantart"></i></a></li><!-- deviantart -->
+                            <li><a href="index.html#" class="social-btn"><i class="fa fa-youtube"></i></a></li><!-- youtube -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+        <!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ==========================
+        FOOTER SECTION END
+        =========================== -->
+
+        <div>
+            <!-- Modal -->
+
+            <div id="mathModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <!-- Modal Content Begins -->
+                    <div class="modal-content">
+                        <!-- Modal Header Begins -->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Javascript Exercises</h4>
+                        </div>
+                        <!-- Modal Header Ends -->
+                        <!-- Modal Body Begins -->
+                        <div class="modal-body">
+                            <!-- Tab Pills Begin -->
+                            <ul class="nav nav-tabs">
+                                <li class="active" data-custom-tab-toggle="#math"><a href="">Math Calculations</a></li>
+                                <li data-custom-tab-toggle="#menu1"><a href="">Factorial</a></li>
+                                <li data-custom-tab-toggle="#menu2"><a href="">FizzBuzz</a></li>
+                                <li data-custom-tab-toggle="#menu3"><a href="">Palindrome</a></li>
+                                <li data-custom-tab-toggle="#menu4"><a href="">Sum of All Fears</a></li>
+                            </ul>
+                            <!-- Tab Pills Ends -->
+                            <!-- Tab Content Begins -->
+                            <div class="tab-content">
+                                <!-- Math Content Begins -->
+                                <div id="math" class="tab-pane fade in active">
+                                    <h2>MATH CALCULATIONS</h2>
+                                    <h4>Enter five integers below. Then the calculate button will help you find the smallest number in the series, largest number in the series, sum, product and average of the numbers. </h4>
                                     <div class="row">
-                                        <div class="'col=md-6">
-                                            <div id="code">
-                                                <pre class="brush: js">
+                                        <!-- Number Input Fields Begins -->
+                                        <div class="col-md-8" style="padding-left: 30px">
+                                            <div class="row">
+                                                <div class="col-md-3">Number 1:</div>
+                                                <div class="col-md-7">
+                                                    <input type="number" id="input1" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-3">Number 2:</div>
+                                                <div class="col-md-7">
+                                                    <input type="number" id="input2" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-3">Number 3:</div>
+                                                <div class="col-md-7">
+                                                    <input type="number" id="input3" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-3">Number 4:</div>
+                                                <div class="col-md-7">
+                                                    <input type="number" id="input4" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-3">Number 5:</div>
+                                                <div class="col-md-7">
+                                                    <input type="number" id="input5" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row" style="margin-top:20px;">
+                                                <div class="col-md-3">
+                                                    <button id="mathBtn" class="btn btn-success" style="width:110px;">Calculate</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <button id="clearBtn" class="btn btn-warning" style="width:110px;">Clear</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <button id="toggleBtn" class="btn btn-danger" style="width:110px">Show Code</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Number Input Fields Ends -->
+                                        <!-- Result Begins -->
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <p style="font-weight:bold; font-size:medium">Your calculated results</p>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p id="smallest"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p id="largest"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p id="sum"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p id="product"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p id="average"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Result Ends -->
+                                    </div>
+                                    <div class="container-fluid" style="padding:40px;">
+                                        <div class="row">
+                                            <div class="'col=md-6">
+                                                <div id="code">
+                                                    <pre class="brush: js">
 $("#code").hide();
     $("#toggleBtn").click(function () {
         $("#code").toggle();
@@ -794,64 +803,64 @@ $("#myModal").on("hide.bs.modal", function () {
 </pre>
 
 
-                                            </div>
+                                                </div>
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Math Content Ends-->
-                            <!-- Factorial Begins -->
-                            <div id="menu1" class="tab-pane fade">
-                                <h2>Factorial</h2>
-                                <div>
+                                <!-- Math Content Ends-->
+                                <!-- Factorial Begins -->
+                                <div id="menu1" class="tab-pane fade">
+                                    <h2>Factorial</h2>
+                                    <div>
 
 
 
-                                    <!--Header of the Demo-->
-                                    <!--Left Side of Screen-->
-                                    <div class="row" style="padding-bottom: 30px">
-                                        <!--Input Field-->
-                                        <div class="col-md-8" style="padding-left: 30px">
-                                            <div class="row">
-                                                <h3>To calculate a factorial, enter a number in the field, and press "calculate."</h3>
-                                                <input id="fact" type="number" placeholder="Enter your number" />
-                                            </div>
-                                            <!--Buttons-->
-                                            <div class="row" style="margin-top:20px;">
-                                                <div class="col-md-3">
-                                                    <button id="btnFact" class="btn btn-danger" style="width:110px;">Calculate</button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button id="factbtnClear" class="btn btn-primary" style="width:110px;">Clear</button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button id="facttoggleBtn" class="btn btn-warning" style="width:110px;">Show Code</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!--Right side of Screen-->
-                                        <div class="row" style="padding-left:30px;">
-
-
-                                            <div class="col-md-6" style="margin-top:30px;">
+                                        <!--Header of the Demo-->
+                                        <!--Left Side of Screen-->
+                                        <div class="row" style="padding-bottom: 30px">
+                                            <!--Input Field-->
+                                            <div class="col-md-6" style="padding-left: 30px">
                                                 <div class="row">
-                                                    <div class="col-md-12 text-left h4">
-                                                        <h3>Results. . .</h3>
+                                                    <h4>To calculate a factorial, enter a number in the field, and press "calculate."</h4>
+                                                    <input id="fact" type="number" placeholder="Enter your number" />
+                                                </div>
+                                                <!--Buttons-->
+                                                <div class="row" style="margin-top:20px;">
+                                                    <div class="col-md-4">
+                                                        <button id="btnFact" class="btn btn-danger" style="width:110px;">Calculate</button>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <button id="factbtnClear" class="btn btn-primary" style="width:110px;">Clear</button>
+                                                    </div>
+                                                    <div class="col-md-">
+                                                        <button id="facttoggleBtn" class="btn btn-warning" style="width:110px;">Show Code</button>
                                                     </div>
                                                 </div>
-                                                <div class="row" style="padding-left:50px;">
-                                                    <h2 id="factOut"></h2>
+                                            </div>
+
+                                            <!--Right side of Screen-->
+                                            <div class="row" style="padding-left:30px;">
+
+
+                                                <div class="col-md-6" style="margin-top:30px;">
+                                                    <div class="row">
+                                                        <div class="col-md-12 text-left h4">
+                                                            <p style="font-weight:bold; font-size:medium">Your calculated results</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row" style="padding-left:50px;">
+                                                        <h2 id="factOut"></h2>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="container-fluid" style="padding:40px;">
-                                        <div class="row">
-                                            <div class="col=md-6">
-                                                <div id="factCode">
-                                                    <pre class="brush: js">
+                                        <div class="container-fluid" style="padding:40px;">
+                                            <div class="row">
+                                                <div class="col=md-6">
+                                                    <div id="factCode">
+                                                        <pre class="brush: js">
         //Toggle Show/Hide Button
     $("#factCode").hide();
     $("#facttoggleBtn").click(function () {
@@ -916,105 +925,107 @@ $("#myModal").on("hide.bs.modal", function () {
  </pre>
 
 
-                                                </div>
+                                                    </div>
 
+                                                </div>
                                             </div>
+
+
+
                                         </div>
 
-
-
                                     </div>
-
                                 </div>
-                            </div>
-                            <!-- Factorial Ends -->
-                            <!-- Fizz Buzz Begins -->
+                                <!-- Factorial Ends -->
+                                <!-- Fizz Buzz Begins -->
 
-                            <div id="menu2" class="tab-pane fade">
-                                <div>
-                                    <h2>FizzBuzz</h2>
-                                    <style>
-                                        .buttonFB {
-                                            width: 100px;
-                                            padding-top: 10px;
-                                        }
+                                <div id="menu2" class="tab-pane fade">
+                                    <div>
+                                        <h2>FizzBuzz</h2>
+                                        <style>
+                                            .buttonFB {
+                                                width: 110px;
+                                                padding-top: 10px;
+                                            }
 
-                                        .fizz {
-                                            color: royalblue;
-                                            font-weight: bolder;
-                                            font-size: larger;
-                                        }
+                                            .fizz {
+                                                color: royalblue;
+                                                font-weight: bolder;
+                                                font-size: larger;
+                                            }
 
-                                        .buzz {
-                                            color: orangered;
-                                            font-weight: bolder;
-                                            font-size: larger;
-                                        }
+                                            .buzz {
+                                                color: orangered;
+                                                font-weight: bolder;
+                                                font-size: larger;
+                                            }
 
-                                        .fizzbuzz {
-                                            color: darkgreen;
-                                            font-weight: bolder;
-                                            font-size: larger;
-                                            font-family: Cooper;
-                                        }
-                                    </style>
+                                            .fizzbuzz {
+                                                color: darkgreen;
+                                                font-weight: bolder;
+                                                font-size: larger;
+                                                font-family: Cooper;
+                                            }
+                                        </style>
 
-                                    <!--Introduction Line-->
-                                    <div class="row" style="padding-left: 15px">
-                                        <div class="cold-md-12 text-left h5">
-                                            Enter two numbers between 1 and 100 in the boxes below. Press "Go" to see multiples of the first number revealed as "Fizz" and multiples of the second number revealed as "buzz".
-                                            Multiples of both numbers will be revealed as FizzBuzz.
-                                        </div>
-                                    </div>
-                                    <!--Introduction Line Finishes-->
-                                    <!--Entry Fields-->
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="row" style="margin-bottom:20px">
-                                                <div class="col-md-6">
-                                                    <input id="fbIn1" type="number" placeholder="Enter number 1" class="form-control" />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <input id="fbIn2" type="number" placeholder="Enter number 2" class="form-control" />
-                                                </div>
-                                                <!--Entry Fields Finishes-->
-                                                <!--Buttons-->
-                                                <div class="row" style="margin-left: 10px; padding-top: 50px;">
-                                                    <div class="col-md-4">
-                                                        <button class="buttonFB btn btn-primary" id="btnFB">Go</button>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <button id="FBbtnClear" class="buttonFB btn btn-success">Clear it all!</button>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <button id="FBbtnToggleCode" class="buttonFB btn btn-warning">Show Code</button>
-                                                    </div>
-                                                </div>
+                                        <!--Introduction Line-->
+                                        <div class="row" style="padding-left: 15px">
+                                            <div class="cold-md-12 text-left">
+                                                <h4>
+                                                    Enter two numbers between 1 and 100 in the boxes below. Press "Go" to see multiples of the first number revealed as "Fizz" and multiples of the second number revealed as "buzz".
+                                                    Multiples of both numbers will be revealed as FizzBuzz.
+                                                </h4>
                                             </div>
                                         </div>
-
-                                        <!--Buttons Finish & Left Side Finishes-->
-                                        <!--Right Side Starts-->
-                                        <div class="col-md-6">
-                                            <div class="row text-center h4">
-                                                Results
-                                            </div>
-                                            <div class="row">
-                                                <p id="Answer">
-
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <!--Show code-->
-                                    <div class="container-fluid" style="padding:40px;">
+                                        <!--Introduction Line Finishes-->
+                                        <!--Entry Fields-->
                                         <div class="row">
-                                            <div class="col=md-6">
-                                                <div id="FBcode">
-                                                    <pre class="brush: js">
+                                            <div class="col-md-6">
+                                                <div class="row" style="margin-bottom:20px">
+                                                    <div class="col-md-6">
+                                                        <input id="fbIn1" type="number" placeholder="Enter number 1" class="form-control" />
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <input id="fbIn2" type="number" placeholder="Enter number 2" class="form-control" />
+                                                    </div>
+                                                    <!--Entry Fields Finishes-->
+                                                    <!--Buttons-->
+                                                    <div class="row" style="margin-left: 10px; padding-top: 50px;">
+                                                        <div class="col-md-4">
+                                                            <button class="buttonFB btn btn-primary" style="width:110px" id="btnFB">Go</button>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <button id="FBbtnClear" class="buttonFB btn btn-success">Clear it all!</button>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <button id="FBbtnToggleCode" class="buttonFB btn btn-warning">Show Code</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Buttons Finish & Left Side Finishes-->
+                                            <!--Right Side Starts-->
+                                            <div class="col-md-6">
+                                                <div class="row text-center h4">
+                                                    <p style="font-weight:bold; font-size:medium">Your calculated results</p>
+                                                </div>
+                                                <div class="row">
+                                                    <p id="Answer">
+
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!--Show code-->
+                                        <div class="container-fluid" style="padding:40px;">
+                                            <div class="row">
+                                                <div class="col=md-6">
+                                                    <div id="FBcode">
+                                                        <pre class="brush: js">
 $("#FBcode").hide();
     $("#FBbtnToggleCode").click(function () {
     $("#FBcode").toggle();
@@ -1059,7 +1070,8 @@ $("#FBcode").hide();
                 Answer += i + comma;
             }
         }
-        
+     //3. Show the answer.
+    $("#Answer").html(Answer);   
         
 
     });
@@ -1076,66 +1088,69 @@ $("#FBcode").hide();
 
 
 
+                                                    </div>
+
                                                 </div>
-
                                             </div>
+
+
                                         </div>
-
-
                                     </div>
                                 </div>
-                            </div>
-                            <!-- FizzBuzz Ends -->
-                            <!-- Palindrome Begins -->
-                            <div id="menu3" class="tab-pane fade">
-                                <h2>PALINDROME</h2>
-                                <div>
-                                    <div class="row">
-                                        <div class="col-md-12 text-center h2">
-                                            Please enter a word to determine if it's a palindrome either by loop or by array.
-                                        </div>
-                                    </div>
+                                <!-- FizzBuzz Ends -->
+                                <!-- Palindrome Begins -->
+                                <div id="menu3" class="tab-pane fade">
+                                    <h2>PALINDROME</h2>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-12 text-left">
+                                                <h4>
+                                                    Please enter a word to determine if it's a palindrome either by loop or by array.
+                                                </h4>
 
-                                    <!--Left Side-->
-                                    <div class="row">
-                                        <!--Input Field-->
-                                        <div class="col-md-7">
-                                            <div class="row" style="margin-left:30px">
-                                                <input id="pal" type="text" placeholder="Enter your word" />
-                                            </div>
-                                            <!--Buttons-->
-                                            <div class="row" style="margin-top:30px">
-                                                <div class="col-md-3">
-                                                    <button id="palIn" class="btn btn-danger" style="width:120px">Check by Loop</button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button id="palbtnClear" class="btn btn-primary" style="width:120px">Clear</button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button id="btnArray" class="btn btn-success" style="width:120px">Check by Array</button>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <button id="paltoggleBtn" class="btn btn-warning" style="width:120px">Show Code</button>
-                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="col-md-5">
-                                            <div class="row" style="margin-left:20px">
-                                                <div class="col-md-12 text-center h4">
-                                                    <u>Results. . .</u>
+                                        <!--Left Side-->
+                                        <div class="row">
+                                            <!--Input Field-->
+                                            <div class="col-md-7">
+                                                <div class="row" style="margin-left:30px">
+                                                    <input id="pal" type="text" placeholder="Enter your word" />
+                                                </div>
+                                                <!--Buttons-->
+                                                <div class="row" style="margin-top:30px">
+                                                    <div class="col-md-3">
+                                                        <button id="palIn" class="btn btn-danger" style="width:120px">Check by Loop</button>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <button id="palbtnClear" class="btn btn-primary" style="width:120px">Clear</button>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <button id="btnArray" class="btn btn-success" style="width:120px">Check by Array</button>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <button id="paltoggleBtn" class="btn btn-warning" style="width:120px">Show Code</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row"style="word-wrap:break-word; margin-left:10px">
-                                                <p id="palOut"></p>
+
+                                            <div class="col-md-5">
+                                                <div class="row" style="margin-left:20px">
+                                                    <div class="col-md-12 text-center h4">
+                                                        <p style="font-weight:bold; font-size:medium">Your calculated results</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="word-wrap:break-word; margin-left:10px">
+                                                    <p id="palOut"></p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="'col=md-6" style="padding:30px">
-                                            <div id="palcode">
-                                                <pre class="brush: js">
+                                        <div class="row">
+                                            <div class="'col=md-6" style="padding:30px">
+                                                <div id="palcode">
+                                                    <pre class="brush: js">
  //Palindrome
     $("#palcode").hide();
     $("#paltoggleBtn").click(function () {
@@ -1195,98 +1210,107 @@ $("#FBcode").hide();
 </pre>
 
 
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Palindrome Ends -->
+                                <!--Sum Fear Begins-->
+                                <div id="menu4" class="tab-pane fade">
+                                    <h2>SUM OF ALL FEARS</h2>
+                                    <div>
+                                        <!--Introduction to the Sum of All Fears-->
+                                        <div class="row">
+                                            <div class="col-md-12 text-left">
+                                                <h4>
+                                                    The Sum of All Fears coding challenge involves an array of integers and some number called "K".
+                                                    If "K" can be derived from adding any two numbers from the array, then it is said to contain that K value.
+                                                    If given an array = {10,4,6,7,9,3} and a "K" value of 17, the array contains the "K" value of 17.
+                                                </h4>
+
+                                            </div>
+                                        </div>
+                                        <!--End of Introduction-->
+                                        <!--Instructions for First Input Boxes-->
+                                        <div class="row">
+                                            <div class="col-md-12 text-left">
+                                                <h4>
+                                                    Create a searchable array by entering 6 numbers into the boxes below:
+                                                </h4>
+
+                                            </div>
+                                        </div>
+                                        <!--End of Instructions for First Input Boxes-->
+                                        <!--First Input Boxes-->
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <input type="number" id="in1" class="form-control" />
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <input type="number" id="in2" class="form-control" />
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <input type="number" id="in3" class="form-control" />
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <input type="number" id="in4" class="form-control" />
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <input type="number" id="in5" class="form-control" />
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <input type="number" id="in6" class="form-control" />
                                             </div>
 
                                         </div>
-                                    </div>
+                                        <!--End of First Input Boxes-->
+                                        <!--Instructions for K Value Box-->
+                                        <div class="row">
+                                            <div class="col-md-12 text-left">
+                                                <h4>
+                                                    Establish a "k" value by entering a number in the box below.
+                                                </h4>
 
-                                </div>
-                            </div>
-                            <!-- Palindrome Ends -->
-                            <!--Sum Fear Begins-->
-                            <div id="menu4" class="tab-pane fade">
-                                <h2>SUM OF ALL FEARS</h2>
-                                <div>
-                                    <!--Introduction to the Sum of All Fears-->
-                                    <div class="row">
-                                        <div class="col-md-12 text-left h4">
-                                            The Sum of All Fears coding challenge involves an array of integers and some number called "K".
-                                            If "K" can be derived from adding any two numbers from the array, then it is said to contain that K value.
-                                            If given an array = {10,4,6,7,9,3} and a "K" value of 17, the array contains the "K" value of 17.
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!--End of Introduction-->
-                                    <!--Instructions for First Input Boxes-->
-                                    <div class="row">
-                                        <div class="col-md-12 text-left h4">
-                                            Create a searchable array by entering 6 numbers into the boxes below:
+                                        <!--End of Instructions for K Value Box-->
+                                        <!--Final Input Box-->
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <input type="number" id="inputK" class="form-control control" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!--End of Instructions for First Input Boxes-->
-                                    <!--First Input Boxes-->
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <input type="number" id="in1" class="form-control" />
+                                        <!--End of K Value Box-->
+                                        <!--Search Button Begins-->
+                                        <div class="row" style="margin-top:20px">
+                                            <div class="col-md-3">
+                                                <button id="searchBtn" class="btn btn-danger" style="width:110px">Search</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button id="SFbtnClear" class="btn btn-warning" style="width:110px">Clear</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button id="SFBtnToggleCode" class="btn btn-success btn-sm" style="width:110px">Show Code</button>
+                                            </div>
                                         </div>
+                                        <!--Search Button Ends-->
+                                        <hr />
+                                        <div id="resultMessage">
 
-                                        <div class="col-md-2">
-                                            <input type="number" id="in2" class="form-control" />
-                                        </div>
-
-                                        <div class="col-md-2">
-                                            <input type="number" id="in3" class="form-control" />
                                         </div>
 
-                                        <div class="col-md-2">
-                                            <input type="number" id="in4" class="form-control" />
-                                        </div>
-
-                                        <div class="col-md-2">
-                                            <input type="number" id="in5" class="form-control" />
-                                        </div>
-
-                                        <div class="col-md-2">
-                                            <input type="number" id="in6" class="form-control" />
-                                        </div>
-
-                                    </div>
-                                    <!--End of First Input Boxes-->
-                                    <!--Instructions for K Value Box-->
-                                    <div class="row">
-                                        <div class="col-md-12 text-left h4">
-                                            Establish a "k" value by entering a number in the box below.
-                                        </div>
-                                    </div>
-                                    <!--End of Instructions for K Value Box-->
-                                    <!--Final Input Box-->
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <input type="number" id="inputK" class="form-control control" />
-                                        </div>
-                                    </div>
-                                    <!--End of K Value Box-->
-                                    <!--Search Button Begins-->
-                                    <div class="row" style="margin-top:20px">
-                                        <div class="col-md-4">
-                                            <button id="searchBtn" class="btn btn-danger">Search</button>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <button id="SFbtnClear" class="btn btn-warning">Clear</button>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <button id="SFBtnToggleCode" class="btn btn-success btn-sm">Show Code</button>
-                                        </div>
-                                    </div>
-                                    <!--Search Button Ends-->
-                                    <hr />
-                                    <div id="resultMessage">
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="'col=md-6" style="padding:40px">
-                                            <div id="SFcode">
-                                                <pre class="brush: js">
+                                        <div class="row">
+                                            <div class="'col=md-6" style="padding:40px">
+                                                <div id="SFcode">
+                                                    <pre class="brush: js">
             $("#SFcode").hide();
     $("#SFBtnToggleCode").click(function () {
         $("#SFcode").toggle();
@@ -1370,65 +1394,65 @@ $("#FBcode").hide();
                 </pre>
 
 
-                                            </div>
+                                                </div>
 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Tab Content Ends -->
                         </div>
-                        <!-- Tab Content Ends -->
+                        <!-- Modal Body Ends -->
+                        <!-- Modal Footer Begins -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                        <!-- Modal Footer Ends -->
                     </div>
-                    <!-- Modal Body Ends -->
-                    <!-- Modal Footer Begins -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                    <!-- Modal Footer Ends -->
                 </div>
             </div>
+            <!-- Modal Content Ends -->
+
         </div>
-        <!-- Modal Content Ends -->
-
-    </div>
 
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- SmoothScroll -->
-    @*<script type="text/javascript" src="~/Content/JohnDoeCss/assets/smoothscroll/smoothscroll.js"></script>*@
-    <!-- Bootstrap -->
-    <script src="~/Content/JohnDoeCss/assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="~/Scripts/JohnDoeScripts/js/waypoints.min.js"></script>
-    <!-- classie.js -->
-    <script src="~/Scripts/JohnDoeScripts/js/classie.js"></script>
-    <!-- FlexSlider -->
-    <script src="~/Content/JohnDoeCss/assets/flexslider/jquery.flexslider.js"></script>
-    <!-- Modernizr -->
-    <script src="~/Scripts/JohnDoeScripts/js/modernizr.js"></script>
-    <!-- Text Rotator -->
-    <script src="~/Content/JohnDoeCss/assets/textrotator/jquery.simple-text-rotator.js"></script>
-    <!-- Lightbox.js -->
-    <script src="~/Content/JohnDoeCss/assets/lightbox/js/lightbox.min.js"></script>
-    <!-- Theme JavaScript Core -->
-    <script src="~/Scripts/JohnDoeScripts/js/main.js"></script>
-    <script src="~/Scripts/JohnDoeScripts/js/script.js"></script>
-    <!--Syntax Highlighter-->
-    <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
-    <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
-    <script>
-        SyntaxHighlighter.all();
-    </script>
-    <!-- Custom Script -->
-    <script src="~/Scripts/Spock_Custom.js"></script>
-    <!-- TEXT ROTATOR SETTINGS -->
-    <script type="text/javascript">
-        $(".rotate").textrotator({
-            animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-            separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-            speed: 2000 // How many milliseconds until the next word show.
-        });
-    </script>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- SmoothScroll -->
+        @*<script type="text/javascript" src="~/Content/JohnDoeCss/assets/smoothscroll/smoothscroll.js"></script>*@
+        <!-- Bootstrap -->
+        <script src="~/Content/JohnDoeCss/assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="~/Scripts/JohnDoeScripts/js/waypoints.min.js"></script>
+        <!-- classie.js -->
+        <script src="~/Scripts/JohnDoeScripts/js/classie.js"></script>
+        <!-- FlexSlider -->
+        <script src="~/Content/JohnDoeCss/assets/flexslider/jquery.flexslider.js"></script>
+        <!-- Modernizr -->
+        <script src="~/Scripts/JohnDoeScripts/js/modernizr.js"></script>
+        <!-- Text Rotator -->
+        <script src="~/Content/JohnDoeCss/assets/textrotator/jquery.simple-text-rotator.js"></script>
+        <!-- Lightbox.js -->
+        <script src="~/Content/JohnDoeCss/assets/lightbox/js/lightbox.min.js"></script>
+        <!-- Theme JavaScript Core -->
+        <script src="~/Scripts/JohnDoeScripts/js/main.js"></script>
+        <script src="~/Scripts/JohnDoeScripts/js/script.js"></script>
+        <!--Syntax Highlighter-->
+        <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
+        <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+        <script>
+            SyntaxHighlighter.all();
+        </script>
+        <!-- Custom Script -->
+        <script src="~/Scripts/Spock_Custom.js"></script>
+        <!-- TEXT ROTATOR SETTINGS -->
+        <script type="text/javascript">
+            $(".rotate").textrotator({
+                animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+                separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+                speed: 2000 // How many milliseconds until the next word show.
+            });
+        </script>
 </body>
 </html>
