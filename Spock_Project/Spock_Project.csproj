@@ -165,6 +165,7 @@
     <Content Include="Images\JohnDoeImages\blog2.jpg" />
     <Content Include="Images\JohnDoeImages\blog3.jpg" />
     <Content Include="Images\JohnDoeImages\clients.png" />
+    <Content Include="Images\JohnDoeImages\favicon-32x32.png" />
     <Content Include="Images\JohnDoeImages\favicon.ico" />
     <Content Include="Images\JohnDoeImages\flowers-871685_1920.jpg" />
     <Content Include="Images\JohnDoeImages\h1-bg.png" />

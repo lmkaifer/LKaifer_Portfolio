@@ -10,120 +10,120 @@
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg">
-    <!-- Modal Content Begins -->
-    <div class="modal-content">
-    <!-- Modal Header Begins -->
-    <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Javascript Exercises</h4>
-    </div>
-    <!-- Modal Header Ends -->
-    <!-- Modal Body Begins -->
-    <div class="modal-body">
-        <!-- Tab Pills Begin -->
-        <ul class="nav nav-pills">
-            <li class="active"><a data-toggle="pill" href="#math">Math Calculations</a></li>
-            <li><a data-toggle="pill" href="#menu1">Factorial</a></li>
-            <li><a data-toggle="pill" href="#menu2">FizzBuzz</a></li>
-            <li><a data-toggle="pill" href="#menu3">Palindrome</a></li>
-            <li><a data-toggle="pill" href="#menu4">SumFear</a></li>
-        </ul>
-        <!-- Tab Pills Ends -->
-        <!-- Tab Content Begins -->
-        <div class="tab-content">
-            <!-- Math Content Begins -->
-            <div id="math" class="tab-pane fade in active">
-                <h3>Math Calculations</h3>
-                <p>Enter five integers to see some calculations.</p>
-                <div class="row">
-                    <!-- Number Input Fields Begins -->
-                    <div class="col-md-8" style="padding-left: 30px">
+        <!-- Modal Content Begins -->
+        <div class="modal-content">
+            <!-- Modal Header Begins -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Javascript Exercises</h4>
+            </div>
+            <!-- Modal Header Ends -->
+            <!-- Modal Body Begins -->
+            <div class="modal-body">
+                <!-- Tab Pills Begin -->
+                <ul class="nav nav-pills">
+                    <li class="active"><a data-toggle="pill" href="#math">Math Calculations</a></li>
+                    <li><a data-toggle="pill" href="#menu1">Factorial</a></li>
+                    <li><a data-toggle="pill" href="#menu2">FizzBuzz</a></li>
+                    <li><a data-toggle="pill" href="#menu3">Palindrome</a></li>
+                    <li><a data-toggle="pill" href="#menu4">SumFear</a></li>
+                </ul>
+                <!-- Tab Pills Ends -->
+                <!-- Tab Content Begins -->
+                <div class="tab-content">
+                    <!-- Math Content Begins -->
+                    <div id="math" class="tab-pane fade in active">
+                        <h3>Math Calculations</h3>
+                        <p>Enter five integers to see some calculations.</p>
                         <div class="row">
-                            <div class="col-md-3">Number 1:</div>
-                            <div class="col-md-7">
-                                <input type="number" id="input1" class="form-control" />
-                            </div>
-                        </div>
+                            <!-- Number Input Fields Begins -->
+                            <div class="col-md-8" style="padding-left: 30px">
+                                <div class="row">
+                                    <div class="col-md-3">Number 1:</div>
+                                    <div class="col-md-7">
+                                        <input type="number" id="input1" class="form-control" />
+                                    </div>
+                                </div>
 
-                        <div class="row">
-                            <div class="col-md-3">Number 2:</div>
-                            <div class="col-md-7">
-                                <input type="number" id="input2" class="form-control" />
-                            </div>
-                        </div>
+                                <div class="row">
+                                    <div class="col-md-3">Number 2:</div>
+                                    <div class="col-md-7">
+                                        <input type="number" id="input2" class="form-control" />
+                                    </div>
+                                </div>
 
-                        <div class="row">
-                            <div class="col-md-3">Number 3:</div>
-                            <div class="col-md-7">
-                                <input type="number" id="input3" class="form-control" />
-                            </div>
-                        </div>
+                                <div class="row">
+                                    <div class="col-md-3">Number 3:</div>
+                                    <div class="col-md-7">
+                                        <input type="number" id="input3" class="form-control" />
+                                    </div>
+                                </div>
 
-                        <div class="row">
-                            <div class="col-md-3">Number 4:</div>
-                            <div class="col-md-7">
-                                <input type="number" id="input4" class="form-control" />
-                            </div>
-                        </div>
+                                <div class="row">
+                                    <div class="col-md-3">Number 4:</div>
+                                    <div class="col-md-7">
+                                        <input type="number" id="input4" class="form-control" />
+                                    </div>
+                                </div>
 
-                        <div class="row">
-                            <div class="col-md-3">Number 5:</div>
-                            <div class="col-md-7">
-                                <input type="number" id="input5" class="form-control" />
-                            </div>
-                        </div>
+                                <div class="row">
+                                    <div class="col-md-3">Number 5:</div>
+                                    <div class="col-md-7">
+                                        <input type="number" id="input5" class="form-control" />
+                                    </div>
+                                </div>
 
-                        <div class="row" style="margin-top:20px;">
-                            <div class="col-md-3">
-                                <button id="mathBtn" class="btn btn-success" style="width:110px;">Calculate</button>
+                                <div class="row" style="margin-top:20px;">
+                                    <div class="col-md-3">
+                                        <button id="mathBtn" class="btn btn-success" style="width:110px;">Calculate</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button id="clearBtn" class="btn btn-warning" style="width:110px;">Clear</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button id="toggleBtn" class="btn btn-danger" style="width:110px">Show Code</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3">
-                                <button id="clearBtn" class="btn btn-warning" style="width:110px;">Clear</button>
+                            <!-- Number Input Fields Ends -->
+                            <!-- Result Begins -->
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <p style="font-weight:bold; font-size:medium">Your calculated results</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="smallest"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="largest"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="sum"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="product"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p id="average"></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3">
-                                <button id="toggleBtn" class="btn btn-danger" style="width:110px">Show Code</button>
-                            </div>
+                            <!-- Result Ends -->
                         </div>
-                    </div>
-                    <!-- Number Input Fields Ends -->
-                    <!-- Result Begins -->
-                    <div class="col-md-4">
-                        <div class="row">
-                            <p style="font-weight:bold; font-size:medium">Your calculated results</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p id="smallest"></p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p id="largest"></p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p id="sum"></p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p id="product"></p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p id="average"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Result Ends -->
-                </div>
-                <div class="container-fluid" style="padding:40px;">
-                    <div class="row">
-                        <div class="'col=md-6">
-                            <div id="code">
-                                <pre class="brush: js">
+                        <div class="container-fluid" style="padding:40px;">
+                            <div class="row">
+                                <div class="'col=md-6">
+                                    <div id="code">
+                                        <pre class="brush: js">
 $("#code").hide();
     $("#toggleBtn").click(function () {
         $("#code").toggle();
@@ -224,64 +224,63 @@ $("#myModal").on("hide.bs.modal", function () {
 </pre>
 
 
-                            </div>
+                                    </div>
 
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Math Content Ends-->
-            <!-- Factorial Begins -->
-            <div id="menu1" class="tab-pane fade">
-                <h2>Factorial</h2>
-                <div>
+                    <!-- Math Content Ends-->
+                    <!-- Factorial Begins -->
+                    <div id="menu1" class="tab-pane fade">
+                        <h2>Factorial</h2>
+                        <div>
 
 
 
-                    <!--Header of the Demo-->
-                    
-                    <!--Left Side of Screen-->
-                    <div class="row" style="padding-bottom: 30px">
-                        <!--Input Field-->
-                        <div class="col-md-8" style="padding-left: 30px">
-                            <div class="row">
-                                <input id="fact" type="number" placeholder="Enter your number" />
-                            </div>
-                            <!--Buttons-->
-                            <div class="row" style="margin-top:20px;">
-                                <div class="col-md-3">
-                                    <button id="btnFact" class="btn btn-danger" style="width:110px;">Calculate</button>
-                                </div>
-                                <div class="col-md-3">
-                                    <button id="factbtnClear" class="btn btn-primary" style="width:110px;">Clear</button>
-                                </div>
-                                <div class="col-md-3">
-                                    <button id="facttoggleBtn" class="btn btn-warning" style="width:110px;">Show Code</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Right side of Screen-->
-                        <div class="row" style="padding-left:30px;">
-
-
-                            <div class="col-md-6" style="margin-top:30px;">
-                                <div class="row">
-                                    <div class="col-md-12 text-left h4">
-                                        <u>Results. . .</u>
+                            <!--Header of the Demo-->
+                            <!--Left Side of Screen-->
+                            <div class="row" style="padding-bottom: 30px">
+                                <!--Input Field-->
+                                <div class="col-md-8" style="padding-left: 30px">
+                                    <div class="row">
+                                        <input id="fact" type="number" placeholder="Enter your number" />
+                                    </div>
+                                    <!--Buttons-->
+                                    <div class="row" style="margin-top:20px;">
+                                        <div class="col-md-3">
+                                            <button id="btnFact" class="btn btn-danger" style="width:110px;">Calculate</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button id="factbtnClear" class="btn btn-primary" style="width:110px;">Clear</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button id="facttoggleBtn" class="btn btn-warning" style="width:110px;">Show Code</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="row" style="padding-left:50px;">
-                                    <p id="factOut"></p>
+
+                                <!--Right side of Screen-->
+                                <div class="row" style="padding-left:30px;">
+
+
+                                    <div class="col-md-6" style="margin-top:30px;">
+                                        <div class="row">
+                                            <div class="col-md-12 text-left h4">
+                                                <u>Results. . .</u>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-left:50px;">
+                                            <p id="factOut"></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="container-fluid" style="padding:40px;">
-                        <div class="row">
-                            <div class="col=md-6">
-                                <div id="factCode">
-                                    <pre class="brush: js">
+                            <div class="container-fluid" style="padding:40px;">
+                                <div class="row">
+                                    <div class="col=md-6">
+                                        <div id="factCode">
+                                            <pre class="brush: js">
         //Toggle Show/Hide Button
     $("#factCode").hide();
     $("#facttoggleBtn").click(function () {
@@ -346,105 +345,105 @@ $("#myModal").on("hide.bs.modal", function () {
  </pre>
 
 
+                                        </div>
+
+                                    </div>
                                 </div>
 
+
+
                             </div>
-                        </div>
 
-
-
-                    </div>
-
-                </div>
-            </div>
-            <!-- Factorial Ends -->
-            <!-- Fizz Buzz Begins -->
-            
-            <div id="menu2" class="tab-pane fade">
-                 <div>
-                    <h2>FizzBuzz</h2>
-                    <style>
-                        .buttonFB {
-                            width: 100px;
-                            padding-top: 10px;
-                        }
-                         .fizz {
-                            color:royalblue;
-                            font-weight: bolder;
-                            font-size:larger;
-                    }
-                        .buzz {
-                            color: orangered;
-                            font-weight: bolder;
-                            font-size: larger;
-                        }
-
-                         .fizzbuzz {
-                             color:darkgreen;
-                             font-weight: bolder;
-                             font-size: larger;
-                             font-family:Cooper;
-                                   
-                         }
-
-                    </style>
-
-                    <!--Introduction Line-->
-                    <div class="row" style="padding-left: 15px">
-                        <div class="cold-md-12 text-left h5">
-                            Enter two numbers between 1 and 100 in the boxes below. Press "Go" to see multiples of the first number revealed as "Fizz" and multiples of the second number revealed as "buzz".
-                            Multiples of both numbers will be revealed as FizzBuzz.
                         </div>
                     </div>
-                    <!--Introduction Line Finishes-->
-                    <!--Entry Fields-->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row" style="margin-bottom:20px">
-                                <div class="col-md-6">
-                                    <input id="fbIn1" type="number" placeholder="Enter number 1" class="form-control"/>
-                                </div>
-                                <div class="col-md-6">
-                                    <input id="fbIn2" type="number" placeholder="Enter number 2" class="form-control"/>
-                                </div>
-                                <!--Entry Fields Finishes-->
-                                <!--Buttons-->
-                                <div class="row" style="margin-left: 10px; padding-top: 50px;">
-                                    <div class="col-md-4">
-                                        <button class="buttonFB btn btn-primary" id="btnFB">Go</button>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button id="FBbtnClear" class="buttonFB btn btn-success">Clear it all!</button>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button id="FBbtnToggleCode" class="buttonFB btn btn-warning">Show Code</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Factorial Ends -->
+                    <!-- Fizz Buzz Begins -->
 
-                        <!--Buttons Finish & Left Side Finishes-->
-                        <!--Right Side Starts-->
-                        <div class="col-md-6">
-                            <div class="row text-center h4">
-                                Results
+                    <div id="menu2" class="tab-pane fade">
+                        <div>
+                            <h2>FizzBuzz</h2>
+                            <style>
+                                .buttonFB {
+                                    width: 100px;
+                                    padding-top: 10px;
+                                }
+
+                                .fizz {
+                                    color: royalblue;
+                                    font-weight: bolder;
+                                    font-size: larger;
+                                }
+
+                                .buzz {
+                                    color: orangered;
+                                    font-weight: bolder;
+                                    font-size: larger;
+                                }
+
+                                .fizzbuzz {
+                                    color: darkgreen;
+                                    font-weight: bolder;
+                                    font-size: larger;
+                                    font-family: Cooper;
+                                }
+                            </style>
+
+                            <!--Introduction Line-->
+                            <div class="row" style="padding-left: 15px">
+                                <div class="cold-md-12 text-left h5">
+                                    Enter two numbers between 1 and 100 in the boxes below. Press "Go" to see multiples of the first number revealed as "Fizz" and multiples of the second number revealed as "buzz".
+                                    Multiples of both numbers will be revealed as FizzBuzz.
+                                </div>
                             </div>
+                            <!--Introduction Line Finishes-->
+                            <!--Entry Fields-->
                             <div class="row">
-                                <p id="Answer">
+                                <div class="col-md-6">
+                                    <div class="row" style="margin-bottom:20px">
+                                        <div class="col-md-6">
+                                            <input id="fbIn1" type="number" placeholder="Enter number 1" class="form-control" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input id="fbIn2" type="number" placeholder="Enter number 2" class="form-control" />
+                                        </div>
+                                        <!--Entry Fields Finishes-->
+                                        <!--Buttons-->
+                                        <div class="row" style="margin-left: 10px; padding-top: 50px;">
+                                            <div class="col-md-4">
+                                                <button class="buttonFB btn btn-primary" id="btnFB">Go</button>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button id="FBbtnClear" class="buttonFB btn btn-success">Clear it all!</button>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button id="FBbtnToggleCode" class="buttonFB btn btn-warning">Show Code</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                </p>
+                                <!--Buttons Finish & Left Side Finishes-->
+                                <!--Right Side Starts-->
+                                <div class="col-md-6">
+                                    <div class="row text-center h4">
+                                        Results
+                                    </div>
+                                    <div class="row">
+                                        <p id="Answer">
 
+                                        </p>
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
 
-                    <!--Show code-->
-                    <div class="container-fluid" style="padding:40px;">
-                        <div class="row">
-                            <div class="col=md-6">
-                                <div id="FBcode">
-                                    <pre class="brush: js">
+                            <!--Show code-->
+                            <div class="container-fluid" style="padding:40px;">
+                                <div class="row">
+                                    <div class="col=md-6">
+                                        <div id="FBcode">
+                                            <pre class="brush: js">
 $("#FBcode").hide();
     $("#FBbtnToggleCode").click(function () {
     $("#FBcode").toggle();
@@ -505,7 +504,7 @@ $("#FBcode").hide();
     //Fizz Buzz ends
 
                                 </pre>
-            
+
 
 
                                         </div>
@@ -513,61 +512,61 @@ $("#FBcode").hide();
                                     </div>
                                 </div>
 
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FizzBuzz Ends -->
+                    <!-- Palindrome Begins -->
+                    <div id="menu3" class="tab-pane fade">
+                        <h3>Palindrome</h3>
+                        <div>
+                            <div class="row">
+                                <div class="col-md-12 text-center h2">
 
                                 </div>
                             </div>
-                        </div>
-                        <!-- FizzBuzz Ends -->
-                        <!-- Palindrome Begins -->
-                        <div id="menu3" class="tab-pane fade">
-                            <h3>Palindrome</h3>
-                            <div>
-                                <div class="row">
-                                    <div class="col-md-12 text-center h2">
-                                       
-                                    </div>
-                                </div>
 
-                                <!--Left Side-->
-                                <div class="row">
-                                    <!--Input Field-->
-                                    <div class="col-md-7">
-                                        <div class="row" style="margin-left:30px">
-                                            <input id="pal" type="text" placeholder="Enter your word" />
-                                        </div>
-                                        <!--Buttons-->
-                                        <div class="row" style="margin-top:30px">
-                                            <div class="col-md-3">
-                                                <button id="palIn" class="btn btn-danger" style="width:120px">Check by Loop</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <button id="palbtnClear" class="btn btn-primary" style="width:120px">Clear</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <button id="btnArray" class="btn btn-success" style="width:120px">Check by Array</button>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <button id="paltoggleBtn" class="btn btn-warning" style="width:120px">Show Code</button>
-                                            </div>
-                                        </div>
+                            <!--Left Side-->
+                            <div class="row">
+                                <!--Input Field-->
+                                <div class="col-md-7">
+                                    <div class="row" style="margin-left:30px">
+                                        <input id="pal" type="text" placeholder="Enter your word" />
                                     </div>
-
-                                    <div class="col-md-5">
-                                        <div class="row" style="margin-left:20px">
-                                            <div class="col-md-12 text-center h4">
-                                                <u>Results. . .</u>
-                                            </div>
+                                    <!--Buttons-->
+                                    <div class="row" style="margin-top:30px">
+                                        <div class="col-md-3">
+                                            <button id="palIn" class="btn btn-danger" style="width:120px">Check by Loop</button>
                                         </div>
-                                        <div class="row">
-                                            <p id="palOut"></p>
+                                        <div class="col-md-3">
+                                            <button id="palbtnClear" class="btn btn-primary" style="width:120px">Clear</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button id="btnArray" class="btn btn-success" style="width:120px">Check by Array</button>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button id="paltoggleBtn" class="btn btn-warning" style="width:120px">Show Code</button>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="'col=md-6" style="padding:30px">
-                                        <div id="palcode">
-                                            <pre class="brush: js">
+                                <div class="col-md-5">
+                                    <div class="row" style="margin-left:20px">
+                                        <div class="col-md-12 text-center h4">
+                                            <u>Results. . .</u>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p id="palOut"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="'col=md-6" style="padding:30px">
+                                    <div id="palcode">
+                                        <pre class="brush: js">
  //Palindrome
     $("#palcode").hide();
     $("#paltoggleBtn").click(function () {
@@ -581,10 +580,14 @@ $("#FBcode").hide();
         };
     });
 
-    //Step 1: Get the word
+       //Step 1: Get the word
     $("#palIn").click(function () {
         var displayword = $("#pal").val();
+
+    //Step 2: Start working with the word to make it all lower case and deal with any spacing.
         var word = displayword.toLowerCase().replace(/\s/g, '');
+
+    //Step 3: Work with the word to see if it's a palindrome and then return a message.
         for (var index = displayword.length - 1, revword = ""; index >= 0; index--) {
             revword += displayword.substr(index, 1);
         }
@@ -595,7 +598,7 @@ $("#FBcode").hide();
             message = displayword + " reversed = " + displayrevword + " therefore " + displayword + " is a palindrome.";
         }
         else {
-            message = displayword + " reversed !=" + displayrevword + " therefore " + displayword + " is not a palindrome";
+            message = displayword + " reversed is not " + displayrevword + " therefore " + displayword + " is not a palindrome.";
         }
 
         $("#palOut").text(message);
@@ -618,7 +621,7 @@ $("#FBcode").hide();
         }
         $("#palOut").text(message);
     });
-
+    //Clear out input and output.
     $("#palbtnClear").click(function () {
         $("#pal").val("");
         $("#palOut").text("");
@@ -627,98 +630,98 @@ $("#FBcode").hide();
 </pre>
 
 
-                                        </div>
-
                                     </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Palindrome Ends -->
+                    <!--Sum Fear Begins-->
+                    <div id="menu4" class="tab-pane fade">
+                        <h3>Sum Fear</h3>
+                        <div>
+                            <!--Introduction to the Sum of All Fears-->
+                            <div class="row">
+                                <div class="col-md-12 text-left h3">
+                                    The Sum of All Fears coding challenge involves an array of integers and some number called "K".
+                                    If "K" can be derived from adding any two numbers from the array, then it is said to contain that K value.
+                                    If given an array = {10,4,6,7,9,3} and a "K" value of 17, the array contains the "K" value of 17.
+                                </div>
+                            </div>
+                            <!--End of Introduction-->
+                            <!--Instructions for First Input Boxes-->
+                            <div class="row">
+                                <div class="col-md-12 text-left h4">
+                                    Create a searchable array by entering 6 numbers into the boxes below:
+                                </div>
+                            </div>
+                            <!--End of Instructions for First Input Boxes-->
+                            <!--First Input Boxes-->
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <input type="number" id="in1" class="form-control" />
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="number" id="in2" class="form-control" />
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="number" id="in3" class="form-control" />
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="number" id="in4" class="form-control" />
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="number" id="in5" class="form-control" />
+                                </div>
+
+                                <div class="col-md-2">
+                                    <input type="number" id="in6" class="form-control" />
                                 </div>
 
                             </div>
-                        </div>
-                        <!-- Palindrome Ends -->
-                        <!--Sum Fear Begins-->
-                        <div id="menu4" class="tab-pane fade">
-                            <h3>Sum Fear</h3>
-                            <div>
-                                <!--Introduction to the Sum of All Fears-->
-                                <div class="row">
-                                    <div class="col-md-12 text-left h3">
-                                        The Sum of All Fears coding challenge involves an array of integers and some number called "K".
-                                        If "K" can be derived from adding any two numbers from the array, then it is said to contain that K value.
-                                        If given an array = {10,4,6,7,9,3} and a "K" value of 17, the array contains the "K" value of 17.
-                                    </div>
+                            <!--End of First Input Boxes-->
+                            <!--Instructions for K Value Box-->
+                            <div class="row">
+                                <div class="col-md-12 text-left h4">
+                                    Establish a "k" value by entering a number in the box below.
                                 </div>
-                                <!--End of Introduction-->
-                                <!--Instructions for First Input Boxes-->
-                                <div class="row">
-                                    <div class="col-md-12 text-left h4">
-                                        Create a searchable array by entering 6 numbers into the boxes below:
-                                    </div>
+                            </div>
+                            <!--End of Instructions for K Value Box-->
+                            <!--Final Input Box-->
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <input type="number" id="inputK" class="form-control control" />
                                 </div>
-                                <!--End of Instructions for First Input Boxes-->
-                                <!--First Input Boxes-->
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <input type="number" id="in1" class="form-control" />
-                                    </div>
-
-                                    <div class="col-md-2">
-                                        <input type="number" id="in2" class="form-control" />
-                                    </div>
-
-                                    <div class="col-md-2">
-                                        <input type="number" id="in3" class="form-control" />
-                                    </div>
-
-                                    <div class="col-md-2">
-                                        <input type="number" id="in4" class="form-control" />
-                                    </div>
-
-                                    <div class="col-md-2">
-                                        <input type="number" id="in5" class="form-control" />
-                                    </div>
-
-                                    <div class="col-md-2">
-                                        <input type="number" id="in6" class="form-control" />
-                                    </div>
-
+                            </div>
+                            <!--End of K Value Box-->
+                            <!--Search Button Begins-->
+                            <div class="row" style="margin-top:20px">
+                                <div class="col-md-4">
+                                    <button id="searchBtn" class="btn btn-danger">Search</button>
                                 </div>
-                                <!--End of First Input Boxes-->
-                                <!--Instructions for K Value Box-->
-                                <div class="row">
-                                    <div class="col-md-12 text-left h4">
-                                        Establish a "k" value by entering a number in the box below.
-                                    </div>
+                                <div class="col-md-4">
+                                    <button id="SFbtnClear" class="btn btn-warning">Clear</button>
                                 </div>
-                                <!--End of Instructions for K Value Box-->
-                                <!--Final Input Box-->
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <input type="number" id="inputK" class="form-control control" />
-                                    </div>
+                                <div class="col-md-4">
+                                    <button id="SFBtnToggleCode" class="btn btn-success btn-sm">Show Code</button>
                                 </div>
-                                <!--End of K Value Box-->
-                                <!--Search Button Begins-->
-                                <div class="row" style="margin-top:20px">
-                                    <div class="col-md-4">
-                                        <button id="searchBtn" class="btn btn-danger">Search</button>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button id="SFbtnClear" class="btn btn-warning">Clear</button>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button id="SFBtnToggleCode" class="btn btn-success btn-sm">Show Code</button>
-                                    </div>
-                                </div>
-                                <!--Search Button Ends-->
-                                <hr />
-                                <div id="resultMessage">
+                            </div>
+                            <!--Search Button Ends-->
+                            <hr />
+                            <div id="resultMessage">
 
-                                </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="'col=md-6" style="padding:40px">
-                                        <div id="SFcode">
-                                            <pre class="brush: js">
+                            <div class="row">
+                                <div class="'col=md-6" style="padding:40px">
+                                    <div id="SFcode">
+                                        <pre class="brush: js">
             $("#SFcode").hide();
     $("#SFBtnToggleCode").click(function () {
         $("#SFcode").toggle();
@@ -802,31 +805,31 @@ $("#FBcode").hide();
                 </pre>
 
 
-                                        </div>
-
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Tab Content Ends -->
                 </div>
-                <!-- Modal Body Ends -->
-                <!-- Modal Footer Begins -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-                <!-- Modal Footer Ends -->
+                <!-- Tab Content Ends -->
             </div>
+            <!-- Modal Body Ends -->
+            <!-- Modal Footer Begins -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            <!-- Modal Footer Ends -->
         </div>
     </div>
-            <!-- Modal Content Ends -->
-     
+</div>
+<!-- Modal Content Ends -->
 
 
 
-            @section scripts{
 
-                <script src="~/Scripts/Spock_Custom.js"></script>
+@section scripts{
 
-            }
+    <script src="~/Scripts/Spock_Custom.js"></script>
+
+}
