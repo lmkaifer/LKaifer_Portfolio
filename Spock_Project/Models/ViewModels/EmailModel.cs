@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Spock_Project.ViewModels
+namespace Spock_Project.Models.ViewModels
 {
     public class EmailModel
     {

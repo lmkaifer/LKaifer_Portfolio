@@ -125,7 +125,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\EmailModel.cs" />
+    <Compile Include="Models\ViewModels\EmailModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -158,6 +158,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\1671taq.png" />
+    <Content Include="Images\iris-3347806_1920.jpg" />
     <Content Include="Images\JohnDoeImages\about1.png" />
     <Content Include="Images\JohnDoeImages\about2.png" />
     <Content Include="Images\JohnDoeImages\about3.png" />
@@ -191,9 +192,13 @@
     <Content Include="Images\JohnDoeImages\portfolio\portfolio-07-thumbnail.jpg" />
     <Content Include="Images\JohnDoeImages\portfolio\portfolio-08-large.jpg" />
     <Content Include="Images\JohnDoeImages\portfolio\portfolio-08-thumbnail.jpg" />
+    <Content Include="Images\JohnDoeImages\portfolio\portfolio-09-thumbnail.jpg" />
+    <Content Include="Images\JohnDoeImages\portfolio\portfolio-10-thumbnail.jpg" />
     <Content Include="Images\JohnDoeImages\preloader.gif" />
     <Content Include="Images\JohnDoeImages\scroll-down.png" />
+    <Content Include="Images\red-gerbera-4072605_1920.jpg" />
     <Content Include="Images\sodapop.png" />
+    <Content Include="Images\sunflower-4386505_1920.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="libman.json" />
@@ -326,7 +331,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
