@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Spock_Project.Models.ViewModels.EmailModel
+
+@{
     Layout = null;
 
 }
@@ -355,17 +357,21 @@
                 <!-- CODING CHALLENGE 1 -->
                 <div class="col-md-2 col-sm-6 ">
                     <div class="overlay-effect effects clearfix">
-                        <div class="img">
+                        <div class="card-body img">
                             <a href="" data-toggle="modal" data-target=#sofModal id="sofModalButton" title="Sum of All Fears Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-05-thumbnail.jpg" alt="Coding Challenge 1"></a>
                         </div>
+                        <h3>Sum of All Fears Challenge</h3>
                     </div>
                 </div>
                 <!-- CODING CHALLENGE 1 ENDS -->
                 <!-- CODING CHALLENGE 2 -->
                 <div class="col-md-2 col-sm-6">
                     <div class="overlay-effect effects clearfix">
-                        <div class="img">
+                        <div class="card-body img">
                             <a href="" data-toggle="modal" data-target=#factModal id="factModalButton" title="Factorial Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-10-thumbnail.jpg" alt="Coding Challenge 2"></a>
+                        </div>
+                        <div class="card-footer">
+                            <h3>Factorial Challenge</h3>
                         </div>
                     </div>
                 </div>
@@ -373,17 +379,23 @@
                 <!-- CODING CHALLENGE 3 -->
                 <div class="col-md-2 col-sm-6">
                     <div class="overlay-effect effects clearfix">
-                        <div class="img">
+                        <div class="card-body img">
                             <a href="" data-toggle="modal" data-target=#fbmodal id="fbButton" title="Fizz Buzz Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-07-thumbnail.jpg" alt="Coding Challenge 3"></a>
+                        </div>
+                        <div class="card-footer">
+                            <h3>Fizz Buzz Challenge</h3>
                         </div>
                     </div>
                 </div>
                 <!-- CODING CHALLENGE 3 ENDS -->
                 <!-- CODING CHALLENGE 4 -->
                 <div class="col-md-2 col-sm-6">
-                    <div class="overlay-effect effects clearfix">
-                        <div class="img">
+                    <div class="card coverlay-effect effects clearfix">
+                        <div class="card-body img">
                             <a href="" data-toggle="modal" data-target=#palModal id="palButton" title="Palindrome Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-08-thumbnail.jpg" alt="Coding Challenge 4"></a>
+                        </div>
+                        <div class="card-footer">
+                            <h3>Palindrome</h3>
                         </div>
                     </div>
                 </div>
@@ -392,8 +404,11 @@
                 <!--CODING CHALLENGE 5 BEGINS-->
                 <div class="col-md-2 col-sm-6 ">
                     <div class="overlay-effect effects clearfix">
-                        <div class="img">
+                        <div class="card-body img">
                             <a href="" data-toggle="modal" data-target=#mathexmodal id="mathexButton" title="Math Exercises Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-04-thumbnail.jpg" alt="Coding Challenge 5"></a>
+                        </div>
+                        <div class="card-footer">
+                            <h3>Math Exercises Challenge</h3>
                         </div>
                     </div>
                 </div>
@@ -404,12 +419,14 @@
                     <div class="overlay-effect effects clearfix">
                         <div class="img">
 
-                            <a href="~/Images/JohnDoeImages/portfolio/portfolio-09-thumbnail.jpg" data-lightbox="roadtrip" title="Project Four - Lorem Ipsum"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-09-thumbnail.jpg" alt="Portfolio Item"></a>
+                            <a href="~/Images/JohnDoeImages/portfolio/portfolio-09-thumbnail.jpg" data-lightbox="roadtrip" title="Next Coding Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-09-thumbnail.jpg" alt="Portfolio Item"></a>
+                        </div>
+                        <div class="card-footer">
+                            <h3>An Upcoming Coding Challenge</h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- PORTFOLIO CHALLENGE 6 ENDS -->
@@ -554,63 +571,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- ==========================
     BLOG SECTION END
     =========================== -->
@@ -704,31 +664,36 @@
                 </div>
                 <!-- Contact Form -->
                 <div class="col-md-6 contact">
-                    <form role="form">
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
                         <!-- Name -->
                         <div class="row">
                             <div class="col-md-6">
                                 <!-- E-Mail -->
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your name">
+                                    <input type="text" class="form-control" name="FromName" placeholder="Your name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <!-- Phone Number -->
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email address">
+                                    <input type="email" class="form-control" name="FromEmail" placeholder="Email address">
                                 </div>
                             </div>
                         </div>
                         <!-- Message Area -->
                         <div class="form-group">
-                            <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
+                            <textarea class="form-control" name="Body" placeholder="Write you message here..." style="height:232px;"></textarea>
                         </div>
                         <!-- Subtmit Button -->
                         <button type="submit" class="btn btn-send">
                             Send message
                         </button>
-                    </form>
+                    }
+
                 </div>
             </div>
         </div>
@@ -758,7 +723,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
+                    <p>All Rights Reserved. &copy; @DateTime.Now.Year <a href="#">Lisa Kaifer</a>
                 </div>
             </div>
         </div>
@@ -1715,6 +1680,8 @@ $("#FBcode").hide();
     <!--Syntax Highlighter-->
     <script src="~/Scripts/SyntaxHighlighter/scripts/shCore.js"></script>
     <script src="~/Scripts/SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         SyntaxHighlighter.all();
     </script>
@@ -1726,6 +1693,16 @@ $("#FBcode").hide();
             animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
             separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
             speed: 2000 // How many milliseconds until the next word show.
+        });
+
+
+        //Message Sent Alert
+        $(document).ready(function () {
+            var sentMessage = "@ViewBag.SentConfirmationMessage";
+            if (sentMessage != null && sentMessage != "")
+            {
+                swal("Thank you!", sentMessage, "success");
+            }
         });
     </script>
 </body>
