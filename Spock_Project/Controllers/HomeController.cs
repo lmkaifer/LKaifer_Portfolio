@@ -21,33 +21,31 @@ namespace Spock_BSDemo.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Index(EmailModel model)
+        public async Task<JsonResult> SendEmailAjax(EmailModel model)
         {
-            if (ModelState.IsValid)
+            //if (ModelState.IsValid)
+            //{
+            try
             {
-                try
+                var from = $"{model.FromEmail}<{WebConfigurationManager.AppSettings["emailto"]}>";
+                var email = new MailMessage(from,
+                    WebConfigurationManager.AppSettings["emailto"])
                 {
-                    var from = $"{model.FromEmail}<{WebConfigurationManager.AppSettings["emailto"]}>";
-                    var email = new MailMessage(from,
-                        WebConfigurationManager.AppSettings["emailto"])
-                    {
-                        Subject = "Portfolio Site Email Message",
-                        Body = $"You have an email from {model.FromName}<br/>{model.Body}",
-                        IsBodyHtml = true
-                    };
-                    var svc = new PersonalEmail();
-                    await svc.SendAsync(email);
-                    ViewBag.SentConfirmationMessage = "Message has been successfully sent.";
-                    return View();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                    await Task.FromResult(0);
-                }
+                    Subject = "Portfolio Site Email Message",
+                    Body = $"You have an email from {model.FromName}<br/>{model.Body}",
+                    IsBodyHtml = true
+                };
+                var svc = new PersonalEmail();
+                await svc.SendAsync(email);
+                string sentConfirmationMessage = "Message has been successfully sent.";
+                return Json(sentConfirmationMessage, JsonRequestBehavior.AllowGet);
             }
-            return View(model);
-
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                await Task.FromResult(0);
+                return Json(ex.Message, JsonRequestBehavior.AllowGet);
+            }
         }
 
 

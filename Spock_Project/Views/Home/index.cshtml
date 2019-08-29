@@ -40,6 +40,88 @@
     <script src="~/Content/JohnDoeCss/assets/html5shiv/html5shiv.js"></script>
     <script src="~/Content/JohnDoeCss/assets/respond/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .portfolio-project-titles {
+            position: absolute;
+            z-index: 30;
+            top: 65%;
+            background-color: rgba(255,255,255,0.7);
+            width: 100%;
+            padding:5px;
+            height:35%;
+        }
+        .portfolio-project-titles h2{
+            font-size: 14px;
+            text-transform: uppercase;
+            color:#E04343!important;
+            letter-spacing: 4px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        .portfolio-project-titles p{
+            font-size: 12px;
+            font-style:italic;
+            color: #353535!important;
+                margin-bottom: 0;
+    margin-top: 0;
+    line-height:14px!important;
+        }
+        .resume-text h2 {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #353535;
+            letter-spacing: 4px;
+            padding-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .resume-text p.edu-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #353535;
+            letter-spacing: 2px;
+            padding-bottom: 0px !important;
+            font-weight: bold;
+        }
+
+        .resume-text p {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+
+        div.resume-overlay {
+            position: absolute;
+            z-index: 30;
+            font-size: medium;
+            color: white;
+            background-color: rgba(0,0,0,0.7);
+            width: 80%;
+            height: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            text-align: left;
+        }
+
+            div.resume-overlay ul {
+                padding-left: 10px !important;
+                list-style-type: none;
+            }
+                div.resume-overlay ul li h2 {
+                    color:lightgray!important;
+                }
+                div.resume-overlay ul li {
+                    margin-bottom: 7px !important;
+                    color: #E04343;
+                    font-style:italic;
+                    font-weight:bold;
+                }
+    </style>
 </head>
 <body id="top">
 
@@ -61,9 +143,10 @@
                             <a href="#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
                             <a href="#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
                             <a href="#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
-                            <a href="#codingChallenge"><i class="fa fa-fw fa-jsfiddle"></i><span>JS</span></a>
                             <a href="#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
-                            <a href="https://lkaiferblog.azurewebsites.net/"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a>
+                            <a href="#codingChallenge"><i class="fa fa-fw fa-jsfiddle"></i><span>JS</span></a>
+                            <a href="#resume"><i class="fa fa-fw fa-file-text"></i><span>Resume</span></a>
+                            <a href="https://lkaiferblog.azurewebsites.net/" target="_blank"><i class="fa fa-fw fa-rss"></i><span>Blog</span></a>
                             <a href="#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
                         </div>
                     </nav>
@@ -142,7 +225,7 @@
                         <!-- Service Box 1 -->
                         <div class="col-md-4 wp2 item">
                             <div class="icon">
-                                <i class="fa fa-camera"></i><!-- Icon -->
+                                <i class="fa fa-cogs"></i><!-- Icon -->
                             </div>
                             <h2>Software Engineer</h2><!-- Title -->
                             <p>
@@ -157,7 +240,7 @@
                             </div>
                             <h2>Technologies</h2><!-- Title -->
                             <p>
-                                I currently work with the following technologies: Javascript, CSS, HTML, JQuery, C#.
+                                I currently work with the following technologies: Javascript, CSS, HTML, JQuery, C#, Xamarin.
 
 
                             </p><!-- Description -->
@@ -178,51 +261,6 @@
             </div>
         </div>
     </section>
-    <!--Language Icon Section-->
-    <!-- Headline -->
-    <section class="swag text-center" id="languageIcon">
-        <div class="container-fluid">
-            <div class="row">
-                <h1 class="arrow">
-                    My<span>Proficiencies</span>
-                </h1>
-            </div>
-
-            <div class="row row-offset-0">
-                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
-                    <div class="img">
-                        <img src="~/Images/c-logo-icon-28402-resized.png" />
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
-                    <div class="img">
-                        <img src="~/Images/Css-256-resized.png" />
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
-                    <div class="img">
-                        <img src="~/Images/iconfinder_HTML_Logo_65687-resized.png" />
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
-                    <div class="img">
-                        <img src="~/Images/javascript-736400_1280-resized.png" />
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
-                    <div class="img">
-                        <img src="~/Images/jquery-icon-21-resized.jpg" />
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
-                    <div class="img">
-                        <img src="~/Images/podcast-icon-28993-resized.png" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Language Icons Section Ends-->
     @*<section id="codingChallenge">
                 <div class="container-fluid">
                     <!-- About 1 -->
@@ -278,7 +316,7 @@
             <!-- Headline -->
             <div class="row">
                 <h1 class="arrow">
-                    Recent <span>Projects</span>
+                    Recent <span>Portfolio Projects</span>
                 </h1>
             </div>
 
@@ -290,8 +328,13 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="overlay-effect effects clearfix">
                         <div class="img">
-                            <a href="https://lkaiferblog.azurewebsites.net/" target="_blank" title="Project Two - Blog">
-                                <img class="grayscale" src="~/Images/JohnDoeImages/portfolio/blog-img-thumbnail.jpg" alt="Portfolio Item">
+                            <div class="portfolio-project-titles">
+                                <h2>Blog</h2>
+                                <p>My Personal Blog</p>
+                                <p>MVC application that has an SQL database backend</p>
+                            </div>
+                            <a href="https://lkaiferblog.azurewebsites.net/" target="_blank" title="Project One - Blog">
+                                <img class="grayscale" src="~/Images/JohnDoeImages/portfolio/blog-thumbnail-720x400.jpg" alt="Blog">
                             </a>
                         </div>
                     </div>
@@ -303,7 +346,13 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="overlay-effect effects clearfix">
                         <div class="img">
-                            <a href="~/Images/JohnDoeImages/portfolio/portfolio-02-large.jpg" data-lightbox="roadtrip" title="Project Two - Blog"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-02-thumbnail.jpg" alt="Portfolio Item"></a>
+                            <div class="portfolio-project-titles">
+                                <h2>Bug Tracker - coming soon</h2>
+                                <p>Enterprise multi-functional issue tracking solution</p>
+                                <p>MVC application that has an SQL database backend</p>
+                            </div>
+                            <a href="~/Images/JohnDoeImages/portfolio/ladybug-thumbnail-720x400.jpg" data-lightbox="roadtrip" title="Project Two - Bug Tracker"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/ladybug-thumbnail-720x400.jpg" alt="Bug Tracker"></a>
+
                         </div>
                     </div>
                 </div>
@@ -312,7 +361,12 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="overlay-effect effects clearfix">
                         <div class="img">
-                            <a href="~/Images/JohnDoeImages/portfolio/portfolio-03-large.jpg" data-lightbox="roadtrip" title="Project Three - Bug Tracker"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-03-thumbnail.jpg" alt="Portfolio Item"></a>
+                            <div class="portfolio-project-titles">
+                                <h2>Financial Portal - coming soon</h2>
+                                <p></p>
+                                <p>MVC application that has an SQL database backend</p>
+                            </div>
+                            <a href="~/Images/JohnDoeImages/portfolio/budget-thumbnail-720x400.jpg" data-lightbox="roadtrip" title="Project Three - Budgeter"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/budget-thumbnail-720x400.jpg" alt="Budgeter"></a>
                         </div>
                     </div>
                 </div>
@@ -321,7 +375,11 @@
                 <div class="col-md-3 col-sm-6 ">
                     <div class="overlay-effect effects clearfix">
                         <div class="img">
-                            <a href="~/Images/JohnDoeImages/portfolio/portfolio-04-large.jpg" data-lightbox="roadtrip" title="Project Four - Lorem Ipsum"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-04-thumbnail.jpg" alt="Portfolio Item"></a>
+                            <div class="portfolio-project-titles">
+                                <h2>Mobile App - coming soon</h2>
+                                <p>Xamarin cross-platform mobile application that utilizes an api layer</p>
+                            </div>
+                            <a href="~/Images/JohnDoeImages/portfolio/mobile-thumbnail-720x400.jpg" data-lightbox="roadtrip" title="Project Two - Mobile App"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/mobile-thumbnail-720x400.jpg" alt="Mobile App"></a>
                         </div>
                     </div>
                 </div>
@@ -358,9 +416,9 @@
                 <div class="col-md-2 col-sm-6 ">
                     <div class="overlay-effect effects clearfix">
                         <div class="card-body img">
+                            <h2>Sum of Fears</h2>
                             <a href="" data-toggle="modal" data-target=#sofModal id="sofModalButton" title="Sum of All Fears Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-05-thumbnail.jpg" alt="Coding Challenge 1"></a>
                         </div>
-                        <h3>Sum of All Fears Challenge</h3>
                     </div>
                 </div>
                 <!-- CODING CHALLENGE 1 ENDS -->
@@ -368,10 +426,10 @@
                 <div class="col-md-2 col-sm-6">
                     <div class="overlay-effect effects clearfix">
                         <div class="card-body img">
+                            <h2>Factorial</h2>
                             <a href="" data-toggle="modal" data-target=#factModal id="factModalButton" title="Factorial Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-10-thumbnail.jpg" alt="Coding Challenge 2"></a>
                         </div>
                         <div class="card-footer">
-                            <h3>Factorial Challenge</h3>
                         </div>
                     </div>
                 </div>
@@ -380,10 +438,10 @@
                 <div class="col-md-2 col-sm-6">
                     <div class="overlay-effect effects clearfix">
                         <div class="card-body img">
+                            <h2>Fizz Buzz</h2>
                             <a href="" data-toggle="modal" data-target=#fbmodal id="fbButton" title="Fizz Buzz Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-07-thumbnail.jpg" alt="Coding Challenge 3"></a>
                         </div>
                         <div class="card-footer">
-                            <h3>Fizz Buzz Challenge</h3>
                         </div>
                     </div>
                 </div>
@@ -392,10 +450,10 @@
                 <div class="col-md-2 col-sm-6">
                     <div class="card coverlay-effect effects clearfix">
                         <div class="card-body img">
+                            <h2>Palindrome</h2>
                             <a href="" data-toggle="modal" data-target=#palModal id="palButton" title="Palindrome Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-08-thumbnail.jpg" alt="Coding Challenge 4"></a>
                         </div>
                         <div class="card-footer">
-                            <h3>Palindrome</h3>
                         </div>
                     </div>
                 </div>
@@ -405,10 +463,10 @@
                 <div class="col-md-2 col-sm-6 ">
                     <div class="overlay-effect effects clearfix">
                         <div class="card-body img">
-                            <a href="" data-toggle="modal" data-target=#mathexmodal id="mathexButton" title="Math Exercises Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-04-thumbnail.jpg" alt="Coding Challenge 5"></a>
+                            <h2>Math Exercises</h2>
+                            <a href="" data-toggle="modal" data-target=#mathexmodal id="mathexButton" title="Math Exercises Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-04-720x400.jpg" alt="Coding Challenge 5"></a>
                         </div>
                         <div class="card-footer">
-                            <h3>Math Exercises Challenge</h3>
                         </div>
                     </div>
                 </div>
@@ -418,15 +476,15 @@
                 <div class="col-md-2 col-sm-6 ">
                     <div class="overlay-effect effects clearfix">
                         <div class="img">
-
+                            <h2>Coming Soon. . .</h2>
                             <a href="~/Images/JohnDoeImages/portfolio/portfolio-09-thumbnail.jpg" data-lightbox="roadtrip" title="Next Coding Challenge"><img class="grayscale" src="~/Images/JohnDoeImages/portfolio/portfolio-09-thumbnail.jpg" alt="Portfolio Item"></a>
                         </div>
                         <div class="card-footer">
-                            <h3>An Upcoming Coding Challenge</h3>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- PORTFOLIO CHALLENGE 6 ENDS -->
@@ -462,27 +520,80 @@
     <!-- ==========================
     CUSTOM SPACER
     =========================== -->
-    <div class="spacer-cta text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+    @*<div class="spacer-cta text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div>*@
     <!-- ==========================
     CUSTOM SPACER END
     =========================== -->
     <!-- ==========================
     BLOG SECTION
     =========================== -->
-    <section class="text-center section-padding" id="blog">
+    <!--Language Icon Section-->
+    <!-- Headline -->
+    <section class="swag text-center" id="languageIcon">
+        <div class="container-fluid">
+            <div class="row">
+                <h1 class="arrow">
+                    My<span>Proficiencies</span>
+                </h1>
+            </div>
+
+            <div class="row row-offset-0">
+                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
+                    <div class="img">
+                        <img src="~/Images/c-logo-icon-28402-resized.png" />
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
+                    <div class="img">
+                        <img src="~/Images/Css-256-resized.png" />
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
+                    <div class="img">
+                        <img src="~/Images/iconfinder_HTML_Logo_65687-resized.png" />
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
+                    <div class="img">
+                        <img src="~/Images/javascript-736400_1280-resized.png" />
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
+                    <div class="img">
+                        <img src="~/Images/jquery-icon-21-resized.jpg" />
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 wp2 item" style="display:inline-block">
+                    <div class="img">
+                        <img src="~/Images/podcast-icon-28993-resized.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Language Icons Section Ends-->
+
+    <section class="text-center section-padding" id="resume" style="background:#E04343;">
         <div class="container">
             <!-- Headline -->
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="arrow">My <span>little</span> blog</h1>
+                    <h1 class="arrow">My <span style="color:white;">resume</span> highlights</h1>
+                </div>
+                <div class="resume-text">
+                    <h2>EDUCATION</h2>
+                    <p class="edu-title">Grand Canyon University, M.Ed. </p>
+                    <p>4.0 Cumulative GPA</p>
+                    <p class="edu-title">Southern University, B.A., Psychology/Education</p>
+                    <p>summa cum laud 4.0 GPA</p>
                 </div>
             </div><br><br>
 
@@ -491,80 +602,121 @@
                 <div id="blogSlider">
                     <ul class="slides">
                         <li>
-                            <!-- Blog Entry 1 -->
                             <div class="col-md-4 wp4">
                                 <div class="overlay-effect effects clearfix">
                                     <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        <div class="resume-overlay overlay-effect effects clearfix">
+                                            <ul>
+                                                <li><h2>Software Engineering</h2></li>
+                                                <l1>Coder Foundry</l1>
+                                                <li>Built a Portfolio Site </li>
+                                                <li>Designed a Bug Tracker</li>
+                                                <li>Created a Financial Portal</li>
+                                                <li>Produced a Xamarin Mobile Application</li>
+                                            </ul>
+                                        </div>
+                                        <img src="~/Images/JohnDoeImages/coderFoundry.png" class="grayscale" alt="Software Engineering">
                                     </div>
                                 </div>
-                                <br>
-                                <h2>Creative Minds</h2><!-- Headline -->
-                                <p></p><!-- Description-->
                             </div>
-                            <!-- Blog Entry 2 -->
+
                             <div class="col-md-4 wp4 delay-05s">
                                 <div class="overlay-effect effects clearfix">
                                     <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        <div class="resume-overlay">
+                                            <ul>
+                                                <li><h2>Finance</h2></li>
+                                                <l1>Second Harvest Food Bank</l1>
+                                                <li>Managed payables</li>
+                                                <li>Handled receivables</li>
+                                                <li>Calculated payroll</li>
+                                                <li>Managed Customer Service Concerns</li>
+                                            </ul>
+                                        </div>
+                                        <img src="~/Images/JohnDoeImages/finance.png" class="grayscale" alt="Finance">
                                     </div>
                                 </div>
-                                <br>
-                                <h2>Creative Hearts</h2><!-- Headline -->
-                                <p></p><!-- Description -->
                             </div>
-                            <!-- Blog Entry 3 -->
+
                             <div class="col-md-4 wp4 delay-1s">
                                 <div class="overlay-effect effects clearfix">
                                     <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                                        <div class="resume-overlay">
+                                            <ul>
+                                                <li><h2>Education</h2></li>
+                                                <l1>FTCC, GTCC, Yonsei University</l1>
+                                                <li>Taught test preparation</li>
+                                                <li>Presented workshops</li>
+                                                <li>Authored textbooks</li>
+                                                <li>Recruited teachers</li>
+                                            </ul>
+                                        </div>
+                                        <img src="~/Images/JohnDoeImages/teaching.png" class="grayscale" alt="Education">
                                     </div>
                                 </div>
-                                <br>
-                                <h2>Creative Ideas</h2><!-- Headline -->
-                                <p></p><!-- Description-->
                             </div>
                         </li>
-                        <li>
-                            <!-- Blog Entry 4 -->
-                            <div class="col-md-4 wp4">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog1.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+                        @*<li>
+
+                                <div class="col-md-4 wp4">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog1.jpg" class="grayscale" alt="Blog Item">
+                                        </div>
                                     </div>
+                                    <br>
+                                    <h2>Creative Minds</h2>
+                                    <p></p>
                                 </div>
-                                <br>
-                                <h2>Creative Minds</h2><!-- Headline -->
-                                <p></p><!-- Description -->
-                            </div>
-                            <!-- Blog Entry 5 -->
-                            <div class="col-md-4 wp4 delay-05s">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog2.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+
+                                <div class="col-md-4 wp4 delay-05s">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog2.jpg" class="grayscale" alt="Blog Item">
+                                        </div>
                                     </div>
+                                    <br>
+                                    <h2>Creative Hearts</h2>
+                                    <p></p>
                                 </div>
-                                <br>
-                                <h2>Creative Hearts</h2>
-                                <p></p>
-                            </div>
-                            <!-- Blog Entry 6 -->
-                            <div class="col-md-4 wp4 delay-1s">
-                                <div class="overlay-effect effects clearfix">
-                                    <div class="img">
-                                        <img src="~/Images/JohnDoeImages/blog3.jpg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
+
+                                <div class="col-md-4 wp4 delay-1s">
+                                    <div class="overlay-effect effects clearfix">
+                                        <div class="img">
+                                            <img src="~/Images/JohnDoeImages/blog3.jpg" class="grayscale" alt="Blog Item">
+                                        </div>
                                     </div>
+                                    <br>
+                                    <h2>Creative Ideas</h2>
+                                    <p></p>
                                 </div>
-                                <br>
-                                <h2>Creative Ideas</h2><!-- Headline -->
-                                <p></p><!-- Description -->
-                            </div>
-                        </li>
+                            </li>*@
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -635,25 +787,28 @@
                 </div>
             </div>
             <div class="row contact-details">
+
                 <!-- Address Box -->
                 <div class="col-md-4">
                     <div class="dark-box box-hover">
-                        <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
-                        <p>3 Ridgemore Ct., Greensboro, NC</p>
+                        <h2><i class="fa fa-map-marker"></i><span>Greensboro, NC</span></h2>
+                        <p></p>
                     </div>
                 </div>
+
                 <!-- Phone Number Box -->
                 <div class="col-md-4">
                     <div class="dark-box box-hover">
-                        <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
-                        <p>+1 336 301 2687</p>
+                        <h2><i class="fa fa-mobile"></i><span>(336) 301-2687</span></h2>
+                        <p></p>
                     </div>
                 </div>
+
                 <!-- E-Mail Box -->
                 <div class="col-md-4">
                     <div class="dark-box box-hover">
-                        <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
-                        <p><a href="index.html#">lmkaifer@hotmail.com</a></p>
+                        <h2><i class="fa fa-paper-plane"></i><span><a href="mailto:lmkaifer@hotmail.com">lmkaifer@hotmail.com</a></span></h2>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -665,28 +820,28 @@
                 <!-- Contact Form -->
                 <div class="col-md-6 contact">
 
-                    @using (Html.BeginForm())
+                    @using (Ajax.BeginForm("SendEmailAjax", new AjaxOptions { HttpMethod = "POST", OnSuccess = "showSuccessMessage" }))
                     {
                         @Html.AntiForgeryToken()
                         @Html.ValidationSummary("", new { @class = "text-danger" })
-                        <!-- Name -->
+                        <!--Name-->
                         <div class="row">
                             <div class="col-md-6">
                                 <!-- E-Mail -->
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="FromName" placeholder="Your name">
+                                    <input type="text" class="form-control" name="FromName" placeholder="Your name" maxlength="50" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <!-- Phone Number -->
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="FromEmail" placeholder="Email address">
+                                    <input type="email" class="form-control" name="FromEmail" placeholder="Email address" maxlength="70" required>
                                 </div>
                             </div>
                         </div>
                         <!-- Message Area -->
                         <div class="form-group">
-                            <textarea class="form-control" name="Body" placeholder="Write you message here..." style="height:232px;"></textarea>
+                            <textarea class="form-control" name="Body" placeholder="Write your message here..." style="height:232px;" maxlength="500" required></textarea>
                         </div>
                         <!-- Subtmit Button -->
                         <button type="submit" class="btn btn-send">
@@ -1658,6 +1813,8 @@ $("#FBcode").hide();
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- ajax unobtrusive -->
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <!-- SmoothScroll -->
     @*<script type="text/javascript" src="~/Content/JohnDoeCss/assets/smoothscroll/smoothscroll.js"></script>*@
     <!-- Bootstrap -->
@@ -1697,13 +1854,17 @@ $("#FBcode").hide();
 
 
         //Message Sent Alert
-        $(document).ready(function () {
+        function showSuccessMessage(data) {
+            swal("Thank you!", data, "success");
+            $("#contact input, #contact textarea").val("");
+        }
+        @*$(document).ready(function () {
             var sentMessage = "@ViewBag.SentConfirmationMessage";
             if (sentMessage != null && sentMessage != "")
             {
                 swal("Thank you!", sentMessage, "success");
             }
-        });
+        });*@
     </script>
 </body>
 </html>
